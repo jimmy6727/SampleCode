@@ -1,4 +1,6 @@
 ## N Gram Language Model
+## This language model program takes two command line arguments - first the modelfile corpus to use for building the bigram
+## language model, and second the testfile that we are interested in predicting the author of.
 
 import re
 import sys
@@ -7,7 +9,6 @@ import numpy as np
 from nltk.util import ngrams
 import math
 
-#file = "/Users/jimmyjacobson/Downloads/modelfile1.txt"
 modelfile = sys.argv[1]
 testfile = sys.argv[2]
 
@@ -34,7 +35,6 @@ def HandleTestFile(t):
     for i in range(len(t)):
         a = t[i][0]
         files = t[i][1:]
-#        print("TestFile info: Author = " + str(a) + " Files = " + str(files) + "\n")
     return(t)
     
 def NoPuncTokenizeString(string):
@@ -46,7 +46,7 @@ def NoPuncTokenizeString(string):
 class LanguageModel:
     
     def __init__(self, modelfilelist):
-    ### Instance variables ###
+    # Class constructor #
     
         # Removes empty strings from modelfilelist
         modelfilelist = [i for i in modelfilelist if i]                         
@@ -80,10 +80,10 @@ class LanguageModel:
         self.training_word_length = len(self.vocabulary)
         self.devset = self.vocabulary[50:(math.ceil(0.1*self.training_word_length))]
         
-        # |V|
+        # |V| = vocab size
         self.size_vocabulary = len(np.unique(self.vocabulary))
         
-        #Build N-Gram Collections
+        # Build N-Gram Collections
         self.bigrams = self.GetNGrams(self.vocabulary, n=2)
         self.trigrams = self.GetNGrams(self.vocabulary, n=3)
 
@@ -95,10 +95,6 @@ class LanguageModel:
             ni = str("n"+str(i))
             self.totalnr += s
             setattr(self, ni, s)
-            
-        
-        
-    # Methods?
     
     def PrintLanguageModel(self):
         print("\nPrinting Language Model for " + str(self.author))
@@ -121,12 +117,7 @@ class LanguageModel:
         print("N9 = " + str(self.n9))
         print("N10 = " + str(self.n10))
         print("Sum nR = " + str(self.totalnr))
-
-    
-    # Smoothing function(s)
-    def SmoothCount(self, ngram):
         
-        return #Return G-T smoothed count for given ngram
         
     def NoPuncTokenizeString(self, string):
         
@@ -155,7 +146,6 @@ class LanguageModel:
                 count = count +1
                 
         if (len(matches)) == 0:
-            #return(self.HandleUnknownWords(to_match, gramlist))
             return(0)
         else:
             return(matches)
@@ -164,11 +154,8 @@ class LanguageModel:
         #Get length of grams that we're working with
         n = len(gramlist[0])
         
-        #print("Given = " + str(given) + " tomatch " + str(to_match))
-        
         #Get matches for the given words
         matches = self.GetMatches(given, gramlist)
-        
         
         if matches == 0:
             #print("No Matches in Get Probability Function")
@@ -183,8 +170,6 @@ class LanguageModel:
                 if matches[i][n-1] == to_match:
                     match_c = match_c+1
                     
-            #print("Match found for " + str(to_match) + " given " + str(given))
-            #print("Probability of " + str(to_match) + " given " + str(given) + " = " + str((match_c)/(given_c)))
             return((match_c)/(given_c))
             
     def cStar(self, c):
@@ -201,18 +186,6 @@ class LanguageModel:
         return(a)
         
     def HandleUnknownWord(self, to_match, given, gramlist):
-        ## So there are no matches of to_match in gramlist, there are a few different solutions here:
-        
-        # Set a default probability for any bigram involving the word to_match
-        
-        # Before training mnodel, we define a vocabulary. Any word that isn't in our vocabulary gets replaced with a special token
-        # The book uses "<UNK>" to mark unknown words. This assigns all unknown words the same token, which we don't want. Thus we can 
-        # use a stemmer to place unknown words into categories like "<UNK-ed>, <UNK-ly>, <UNK-ing>, etc."
-        
-        # We can also treat the initial occurance of each word in out test set as an unknown word (combined with stemming).
-        
-        # And what about unseen bigrams?
-        
         # Zeroes in the matrix can be smoothed with Good Turing Smoothing: C* = (c+1)(N_{c+1} / N_c) where N_c is the number of unique
         # n-grams that appear exactly c times in the training corpus. So if there are 10000 unique bigrams that appear twice, and 5000 
         # unique bigrams that appear three times the equation would look like (2+1)(10000/5000) = 6
@@ -259,15 +232,6 @@ def main():
             elif d < a:
                 print("Models predict author = Dickens \n\n")
                 
-    #d = DickensModel.GetProbabilityOfSequence(t, DickensModel.bigrams)
-    #print("Correct Author: " + c_a)
-            
-    #AustenModel.PrintLanguageModel()
-    #DickensModel.PrintLanguageModel()
-    
-    #AustenModel.GetProbabilityOfSequence(t, AustenModel.bigrams)
-    #DickensModel.GetProbabilityOfSequence(t, DickensModel.bigrams)
-    #a = AustenModel.GetProbabilityOfSequence(t, AustenModel.bigrams)
     return
 
 main()
@@ -275,7 +239,7 @@ main()
 ## Outout and results:
 
 #My models predicted three of the six test files accurately. It was notable to me that 
-#they actually got 5 of the 6 test files correct when I left zero probability alone and
+#they actually got 5 of the 6 test files correct when I left zero probabilities unsmoothed and
 #didn't include them in the count. However I opted for the more theoretically correct 
 #implementation. 
 #
