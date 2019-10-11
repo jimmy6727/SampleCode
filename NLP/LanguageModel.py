@@ -1,4 +1,4 @@
-## N Gram Language Model
+## N Gram Language Model 
 ## This language model program takes two command line arguments - first the modelfile corpus to use for building the bigram
 ## language model, and second the testfile that we are interested in predicting the author of.
 
