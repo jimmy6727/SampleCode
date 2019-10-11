@@ -10,6 +10,8 @@ static SpringForce_t s_springForce = k_SpringForceMax;
 static uint32_t s_springLoadMaxTime;
 static uint16_t s_reactionTime = 200;
 
+
+// This function will be called whenever the device is powered on.
 void Arm_init()
 {
   /*Motor_rotate(k_ArmDirectionDown, k_MotorMaxSpeed);
@@ -27,6 +29,8 @@ void Arm_init()
     Arm_release();*/
 }
 
+// Called when faceoff button is pressed. This is the "faceoff loop" that emits the referee's calls from the speaker and 
+// delays the simulated opponent by a randomized-within-a-certain-interval amount of time.
 void Arm_release()
 {
   if (s_armState == k_armStateHomePosition) {
