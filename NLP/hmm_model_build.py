@@ -1,5 +1,6 @@
-## hmm_model_build.py
-## Works with hmm_sequence
+## Hidden Markov Model Part of Speech Tagger
+## This model-building script takes a command line argument of a binary, pre-tagged training corpus and builds probability
+## matrices for use in predictive part of speech analysis of text.
 
 # P(ti | ti-1) probability of a tag bigram - the transition probability
 # P(wi | ti) probability of a word given a tag - the emission probability
