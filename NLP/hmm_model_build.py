@@ -1,4 +1,4 @@
-## Hidden Markov Model Part of Speech Tagger
+## Hidden Markov Model Part of Speech Tagger 
 ## This model-building script takes a command line argument of a binary, pre-tagged training corpus and builds probability
 ## matrices for use in predictive part of speech analysis of text.
 
