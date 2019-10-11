@@ -1,0 +1,1690 @@
+2019-04-06 16:21:56.657 [info] <0.8.0> Log file opened with Lager
+2019-04-06 16:21:57.018 [info] <0.211.0> 
+ Starting RabbitMQ 3.7.14 on Erlang 21.3
+ Copyright (C) 2007-2019 Pivotal Software, Inc.
+ Licensed under the MPL.  See https://www.rabbitmq.com/
+2019-04-06 16:21:57.022 [info] <0.211.0> 
+ node           : rabbit@8afbfc42
+ home dir       : /Users/jimmyjacobson
+ config file(s) : (none)
+ cookie hash    : ZQ9SkBGKy/8h3zW+av50Gw==
+ log(s)         : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log
+                : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42_upgrade.log
+ database dir   : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42
+2019-04-06 16:21:58.288 [info] <0.211.0> Running boot step pre_boot defined by app rabbit
+2019-04-06 16:21:58.288 [info] <0.211.0> Running boot step rabbit_core_metrics defined by app rabbit
+2019-04-06 16:21:58.289 [info] <0.211.0> Running boot step rabbit_alarm defined by app rabbit
+2019-04-06 16:21:58.309 [info] <0.219.0> Memory high watermark set to 6553 MiB (6871947673 bytes) of 16384 MiB (17179869184 bytes) total
+2019-04-06 16:21:58.333 [info] <0.221.0> Enabling free disk space monitoring
+2019-04-06 16:21:58.333 [info] <0.221.0> Disk free limit set to 50MB
+2019-04-06 16:21:58.340 [info] <0.211.0> Running boot step code_server_cache defined by app rabbit
+2019-04-06 16:21:58.340 [info] <0.211.0> Running boot step file_handle_cache defined by app rabbit
+2019-04-06 16:21:58.340 [info] <0.224.0> Limiting to approx 156 file handles (138 sockets)
+2019-04-06 16:21:58.340 [info] <0.225.0> FHC read buffering:  OFF
+2019-04-06 16:21:58.340 [info] <0.225.0> FHC write buffering: ON
+2019-04-06 16:21:58.341 [info] <0.211.0> Running boot step worker_pool defined by app rabbit
+2019-04-06 16:21:58.341 [info] <0.211.0> Running boot step database defined by app rabbit
+2019-04-06 16:21:58.341 [info] <0.211.0> Node database directory at /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42 is empty. Assuming we need to join an existing cluster or initialise from scratch...
+2019-04-06 16:21:58.341 [info] <0.211.0> Configured peer discovery backend: rabbit_peer_discovery_classic_config
+2019-04-06 16:21:58.341 [info] <0.211.0> Will try to lock with peer discovery backend rabbit_peer_discovery_classic_config
+2019-04-06 16:21:58.341 [info] <0.211.0> Peer discovery backend does not support locking, falling back to randomized delay
+2019-04-06 16:21:58.342 [info] <0.211.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping randomized startup delay.
+2019-04-06 16:21:58.342 [info] <0.211.0> All discovered existing cluster peers: 
+2019-04-06 16:21:58.342 [info] <0.211.0> Discovered no peer nodes to cluster with
+2019-04-06 16:21:58.343 [info] <0.43.0> Application mnesia exited with reason: stopped
+2019-04-06 16:21:58.707 [info] <0.211.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-06 16:21:58.734 [info] <0.211.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-06 16:21:58.772 [info] <0.211.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-06 16:21:58.772 [info] <0.211.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2019-04-06 16:21:58.772 [info] <0.211.0> Running boot step database_sync defined by app rabbit
+2019-04-06 16:21:58.772 [info] <0.211.0> Running boot step codec_correctness_check defined by app rabbit
+2019-04-06 16:21:58.772 [info] <0.211.0> Running boot step external_infrastructure defined by app rabbit
+2019-04-06 16:21:58.772 [info] <0.211.0> Running boot step rabbit_registry defined by app rabbit
+2019-04-06 16:21:58.772 [info] <0.211.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2019-04-06 16:21:58.772 [info] <0.211.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2019-04-06 16:21:58.772 [info] <0.211.0> Running boot step rabbit_event defined by app rabbit
+2019-04-06 16:21:58.772 [info] <0.211.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2019-04-06 16:21:58.772 [info] <0.211.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2019-04-06 16:21:58.773 [info] <0.211.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2019-04-06 16:21:58.773 [info] <0.211.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2019-04-06 16:21:58.773 [info] <0.211.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2019-04-06 16:21:58.773 [info] <0.211.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2019-04-06 16:21:58.773 [info] <0.211.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2019-04-06 16:21:58.773 [info] <0.211.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2019-04-06 16:21:58.773 [info] <0.211.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2019-04-06 16:21:58.773 [info] <0.211.0> Running boot step rabbit_priority_queue defined by app rabbit
+2019-04-06 16:21:58.773 [info] <0.211.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2019-04-06 16:21:58.773 [info] <0.211.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2019-04-06 16:21:58.773 [info] <0.211.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2019-04-06 16:21:58.773 [info] <0.211.0> Running boot step kernel_ready defined by app rabbit
+2019-04-06 16:21:58.773 [info] <0.211.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2019-04-06 16:21:58.773 [info] <0.211.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2019-04-06 16:21:58.781 [info] <0.211.0> Running boot step guid_generator defined by app rabbit
+2019-04-06 16:21:58.791 [info] <0.211.0> Running boot step rabbit_node_monitor defined by app rabbit
+2019-04-06 16:21:58.792 [info] <0.401.0> Starting rabbit_node_monitor
+2019-04-06 16:21:58.792 [info] <0.211.0> Running boot step delegate_sup defined by app rabbit
+2019-04-06 16:21:58.793 [info] <0.211.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2019-04-06 16:21:58.793 [info] <0.211.0> Running boot step core_initialized defined by app rabbit
+2019-04-06 16:21:58.793 [info] <0.211.0> Running boot step upgrade_queues defined by app rabbit
+2019-04-06 16:21:58.806 [info] <0.211.0> message_store upgrades: 1 to apply
+2019-04-06 16:21:58.806 [info] <0.211.0> message_store upgrades: Applying rabbit_variable_queue:move_messages_to_vhost_store
+2019-04-06 16:21:58.806 [info] <0.211.0> message_store upgrades: No durable queues found. Skipping message store migration
+2019-04-06 16:21:58.806 [info] <0.211.0> message_store upgrades: Removing the old message store data
+2019-04-06 16:21:58.806 [info] <0.211.0> message_store upgrades: All upgrades applied successfully
+2019-04-06 16:21:58.831 [info] <0.211.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2019-04-06 16:21:58.832 [info] <0.211.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2019-04-06 16:21:58.832 [info] <0.211.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2019-04-06 16:21:58.832 [info] <0.211.0> Running boot step rabbit_policies defined by app rabbit
+2019-04-06 16:21:58.833 [info] <0.211.0> Running boot step rabbit_policy defined by app rabbit
+2019-04-06 16:21:58.833 [info] <0.211.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2019-04-06 16:21:58.834 [info] <0.211.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2019-04-06 16:21:58.834 [info] <0.211.0> Running boot step recovery defined by app rabbit
+2019-04-06 16:21:58.834 [info] <0.211.0> Running boot step empty_db_check defined by app rabbit
+2019-04-06 16:21:58.835 [info] <0.211.0> Adding vhost '/'
+2019-04-06 16:21:58.926 [info] <0.436.0> Making sure data directory '/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2019-04-06 16:21:58.941 [info] <0.436.0> Starting message stores for vhost '/'
+2019-04-06 16:21:58.942 [info] <0.440.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2019-04-06 16:21:58.947 [info] <0.436.0> Started message store of type transient for vhost '/'
+2019-04-06 16:21:58.947 [info] <0.443.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2019-04-06 16:21:58.948 [warning] <0.443.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2019-04-06 16:21:58.949 [info] <0.436.0> Started message store of type persistent for vhost '/'
+2019-04-06 16:21:58.950 [info] <0.211.0> Creating user 'guest'
+2019-04-06 16:21:58.960 [info] <0.211.0> Setting user tags for user 'guest' to [administrator]
+2019-04-06 16:21:58.972 [info] <0.211.0> Setting permissions for 'guest' in '/' to '.*', '.*', '.*'
+2019-04-06 16:21:58.986 [info] <0.211.0> Running boot step rabbit_looking_glass defined by app rabbit
+2019-04-06 16:21:58.986 [info] <0.211.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2019-04-06 16:21:58.987 [info] <0.211.0> Running boot step background_gc defined by app rabbit
+2019-04-06 16:21:58.987 [info] <0.211.0> Running boot step connection_tracking defined by app rabbit
+2019-04-06 16:21:59.006 [info] <0.211.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@8afbfc42
+2019-04-06 16:21:59.022 [info] <0.211.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@8afbfc42
+2019-04-06 16:21:59.023 [info] <0.211.0> Running boot step routing_ready defined by app rabbit
+2019-04-06 16:21:59.023 [info] <0.211.0> Running boot step pre_flight defined by app rabbit
+2019-04-06 16:21:59.023 [info] <0.211.0> Running boot step notify_cluster defined by app rabbit
+2019-04-06 16:21:59.023 [info] <0.211.0> Running boot step networking defined by app rabbit
+2019-04-06 16:21:59.026 [warning] <0.475.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+2019-04-06 16:21:59.026 [info] <0.489.0> started TCP listener on [::]:5672
+2019-04-06 16:21:59.027 [info] <0.211.0> Running boot step direct_client defined by app rabbit
+2019-04-06 16:21:59.027 [notice] <0.104.0> Changed loghwm of /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log to 50
+2019-04-06 16:21:59.101 [info] <0.8.0> Server startup complete; 0 plugins started.
+2019-04-06 16:22:08.879 [info] <0.494.0> accepting AMQP connection <0.494.0> ([::1]:59363 -> [::1]:5672)
+2019-04-06 16:22:08.891 [info] <0.494.0> connection <0.494.0> ([::1]:59363 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 16:22:56.055 [info] <0.512.0> accepting AMQP connection <0.512.0> ([::1]:59370 -> [::1]:5672)
+2019-04-06 16:22:56.057 [info] <0.512.0> connection <0.512.0> ([::1]:59370 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 16:23:13.028 [warning] <0.512.0> closing AMQP connection <0.512.0> ([::1]:59370 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-06 16:23:48.271 [info] <0.8.0> Log file opened with Lager
+2019-04-06 16:23:49.060 [info] <0.300.0> 
+ Starting RabbitMQ 3.7.14 on Erlang 21.3
+ Copyright (C) 2007-2019 Pivotal Software, Inc.
+ Licensed under the MPL.  See https://www.rabbitmq.com/
+2019-04-06 16:23:49.061 [info] <0.300.0> 
+ node           : rabbit@8afbfc42
+ home dir       : /Users/jimmyjacobson
+ config file(s) : (none)
+ cookie hash    : ZQ9SkBGKy/8h3zW+av50Gw==
+ log(s)         : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log
+                : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42_upgrade.log
+ database dir   : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42
+2019-04-06 16:23:49.788 [info] <0.300.0> Running boot step pre_boot defined by app rabbit
+2019-04-06 16:23:49.788 [info] <0.300.0> Running boot step rabbit_core_metrics defined by app rabbit
+2019-04-06 16:23:49.788 [info] <0.300.0> Running boot step rabbit_alarm defined by app rabbit
+2019-04-06 16:23:49.805 [info] <0.308.0> Memory high watermark set to 6553 MiB (6871947673 bytes) of 16384 MiB (17179869184 bytes) total
+2019-04-06 16:23:49.829 [info] <0.310.0> Enabling free disk space monitoring
+2019-04-06 16:23:49.829 [info] <0.310.0> Disk free limit set to 50MB
+2019-04-06 16:23:49.836 [info] <0.300.0> Running boot step code_server_cache defined by app rabbit
+2019-04-06 16:23:49.836 [info] <0.300.0> Running boot step file_handle_cache defined by app rabbit
+2019-04-06 16:23:49.836 [info] <0.313.0> Limiting to approx 156 file handles (138 sockets)
+2019-04-06 16:23:49.836 [info] <0.314.0> FHC read buffering:  OFF
+2019-04-06 16:23:49.836 [info] <0.314.0> FHC write buffering: ON
+2019-04-06 16:23:49.836 [info] <0.300.0> Running boot step worker_pool defined by app rabbit
+2019-04-06 16:23:49.837 [info] <0.300.0> Running boot step database defined by app rabbit
+2019-04-06 16:23:49.837 [info] <0.300.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-06 16:23:49.899 [info] <0.300.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-06 16:23:49.899 [info] <0.300.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2019-04-06 16:23:49.899 [info] <0.300.0> Running boot step database_sync defined by app rabbit
+2019-04-06 16:23:49.899 [info] <0.300.0> Running boot step codec_correctness_check defined by app rabbit
+2019-04-06 16:23:49.899 [info] <0.300.0> Running boot step external_infrastructure defined by app rabbit
+2019-04-06 16:23:49.899 [info] <0.300.0> Running boot step rabbit_registry defined by app rabbit
+2019-04-06 16:23:49.899 [info] <0.300.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2019-04-06 16:23:49.899 [info] <0.300.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2019-04-06 16:23:49.899 [info] <0.300.0> Running boot step rabbit_event defined by app rabbit
+2019-04-06 16:23:49.899 [info] <0.300.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step rabbit_priority_queue defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step kernel_ready defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2019-04-06 16:23:49.900 [info] <0.300.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2019-04-06 16:23:49.908 [info] <0.300.0> Running boot step guid_generator defined by app rabbit
+2019-04-06 16:23:49.921 [info] <0.300.0> Running boot step rabbit_node_monitor defined by app rabbit
+2019-04-06 16:23:49.921 [info] <0.344.0> Starting rabbit_node_monitor
+2019-04-06 16:23:49.921 [info] <0.300.0> Running boot step delegate_sup defined by app rabbit
+2019-04-06 16:23:49.922 [info] <0.300.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2019-04-06 16:23:49.922 [info] <0.300.0> Running boot step core_initialized defined by app rabbit
+2019-04-06 16:23:49.922 [info] <0.300.0> Running boot step upgrade_queues defined by app rabbit
+2019-04-06 16:23:49.935 [info] <0.300.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2019-04-06 16:23:49.936 [info] <0.300.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2019-04-06 16:23:49.936 [info] <0.300.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2019-04-06 16:23:49.936 [info] <0.300.0> Running boot step rabbit_policies defined by app rabbit
+2019-04-06 16:23:49.936 [info] <0.300.0> Running boot step rabbit_policy defined by app rabbit
+2019-04-06 16:23:49.937 [info] <0.300.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2019-04-06 16:23:49.937 [info] <0.300.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2019-04-06 16:23:49.937 [info] <0.300.0> Running boot step recovery defined by app rabbit
+2019-04-06 16:23:49.937 [info] <0.371.0> Making sure data directory '/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2019-04-06 16:23:49.950 [info] <0.371.0> Starting message stores for vhost '/'
+2019-04-06 16:23:49.951 [info] <0.375.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2019-04-06 16:23:49.956 [info] <0.371.0> Started message store of type transient for vhost '/'
+2019-04-06 16:23:49.956 [info] <0.378.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2019-04-06 16:23:49.957 [warning] <0.378.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2019-04-06 16:23:49.958 [info] <0.371.0> Started message store of type persistent for vhost '/'
+2019-04-06 16:23:49.960 [info] <0.300.0> Running boot step empty_db_check defined by app rabbit
+2019-04-06 16:23:49.960 [info] <0.300.0> Running boot step rabbit_looking_glass defined by app rabbit
+2019-04-06 16:23:49.960 [info] <0.300.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2019-04-06 16:23:49.960 [info] <0.300.0> Running boot step background_gc defined by app rabbit
+2019-04-06 16:23:49.960 [info] <0.300.0> Running boot step connection_tracking defined by app rabbit
+2019-04-06 16:23:49.960 [info] <0.300.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@8afbfc42
+2019-04-06 16:23:49.960 [info] <0.300.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@8afbfc42
+2019-04-06 16:23:49.961 [info] <0.300.0> Running boot step routing_ready defined by app rabbit
+2019-04-06 16:23:49.961 [info] <0.300.0> Running boot step pre_flight defined by app rabbit
+2019-04-06 16:23:49.961 [info] <0.300.0> Running boot step notify_cluster defined by app rabbit
+2019-04-06 16:23:49.961 [info] <0.300.0> Running boot step networking defined by app rabbit
+2019-04-06 16:23:49.963 [warning] <0.401.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+2019-04-06 16:23:49.964 [info] <0.415.0> started TCP listener on [::]:5672
+2019-04-06 16:23:49.964 [info] <0.300.0> Running boot step direct_client defined by app rabbit
+2019-04-06 16:23:49.965 [notice] <0.104.0> Changed loghwm of /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log to 50
+2019-04-06 16:23:50.040 [info] <0.8.0> Server startup complete; 0 plugins started.
+2019-04-06 16:24:14.413 [info] <0.420.0> accepting AMQP connection <0.420.0> ([::1]:59391 -> [::1]:5672)
+2019-04-06 16:24:14.416 [info] <0.420.0> connection <0.420.0> ([::1]:59391 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 16:24:37.111 [info] <0.437.0> accepting AMQP connection <0.437.0> ([::1]:59397 -> [::1]:5672)
+2019-04-06 16:24:37.114 [info] <0.437.0> connection <0.437.0> ([::1]:59397 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 16:24:37.117 [info] <0.437.0> closing AMQP connection <0.437.0> ([::1]:59397 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-06 16:32:35.179 [warning] <0.420.0> closing AMQP connection <0.420.0> ([::1]:59391 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-06 17:02:08.068 [info] <0.486.0> accepting AMQP connection <0.486.0> ([::1]:59743 -> [::1]:5672)
+2019-04-06 17:02:08.071 [info] <0.486.0> connection <0.486.0> ([::1]:59743 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 17:02:08.080 [warning] <0.486.0> closing AMQP connection <0.486.0> ([::1]:59743 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-06 17:02:15.168 [info] <0.506.0> accepting AMQP connection <0.506.0> ([::1]:59747 -> [::1]:5672)
+2019-04-06 17:02:15.171 [info] <0.506.0> connection <0.506.0> ([::1]:59747 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 17:02:38.619 [info] <0.518.0> accepting AMQP connection <0.518.0> ([::1]:59751 -> [::1]:5672)
+2019-04-06 17:02:38.621 [info] <0.518.0> connection <0.518.0> ([::1]:59751 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 17:03:01.907 [info] <0.536.0> accepting AMQP connection <0.536.0> ([::1]:59762 -> [::1]:5672)
+2019-04-06 17:03:01.910 [info] <0.536.0> connection <0.536.0> ([::1]:59762 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 17:03:01.914 [info] <0.536.0> closing AMQP connection <0.536.0> ([::1]:59762 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-06 17:03:56.744 [info] <0.552.0> accepting AMQP connection <0.552.0> ([::1]:59838 -> [::1]:5672)
+2019-04-06 17:03:56.747 [info] <0.552.0> connection <0.552.0> ([::1]:59838 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 17:03:56.799 [info] <0.552.0> closing AMQP connection <0.552.0> ([::1]:59838 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-06 17:04:14.995 [info] <0.567.0> accepting AMQP connection <0.567.0> ([::1]:59845 -> [::1]:5672)
+2019-04-06 17:04:14.998 [info] <0.567.0> connection <0.567.0> ([::1]:59845 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 17:04:20.984 [info] <0.584.0> accepting AMQP connection <0.584.0> ([::1]:59849 -> [::1]:5672)
+2019-04-06 17:04:20.987 [info] <0.584.0> connection <0.584.0> ([::1]:59849 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 17:04:20.990 [info] <0.584.0> closing AMQP connection <0.584.0> ([::1]:59849 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-06 17:05:15.173 [error] <0.506.0> closing AMQP connection <0.506.0> ([::1]:59747 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-06 17:05:52.906 [info] <0.8.0> Log file opened with Lager
+2019-04-06 17:05:53.684 [info] <0.269.0> 
+ Starting RabbitMQ 3.7.14 on Erlang 21.3
+ Copyright (C) 2007-2019 Pivotal Software, Inc.
+ Licensed under the MPL.  See https://www.rabbitmq.com/
+2019-04-06 17:05:53.685 [info] <0.269.0> 
+ node           : rabbit@8afbfc42
+ home dir       : /Users/jimmyjacobson
+ config file(s) : (none)
+ cookie hash    : ZQ9SkBGKy/8h3zW+av50Gw==
+ log(s)         : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log
+                : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42_upgrade.log
+ database dir   : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42
+2019-04-06 17:05:54.461 [info] <0.269.0> Running boot step pre_boot defined by app rabbit
+2019-04-06 17:05:54.461 [info] <0.269.0> Running boot step rabbit_core_metrics defined by app rabbit
+2019-04-06 17:05:54.462 [info] <0.269.0> Running boot step rabbit_alarm defined by app rabbit
+2019-04-06 17:05:54.478 [info] <0.277.0> Memory high watermark set to 6553 MiB (6871947673 bytes) of 16384 MiB (17179869184 bytes) total
+2019-04-06 17:05:54.501 [info] <0.279.0> Enabling free disk space monitoring
+2019-04-06 17:05:54.501 [info] <0.279.0> Disk free limit set to 50MB
+2019-04-06 17:05:54.510 [info] <0.269.0> Running boot step code_server_cache defined by app rabbit
+2019-04-06 17:05:54.510 [info] <0.269.0> Running boot step file_handle_cache defined by app rabbit
+2019-04-06 17:05:54.510 [info] <0.282.0> Limiting to approx 156 file handles (138 sockets)
+2019-04-06 17:05:54.510 [info] <0.283.0> FHC read buffering:  OFF
+2019-04-06 17:05:54.510 [info] <0.283.0> FHC write buffering: ON
+2019-04-06 17:05:54.510 [info] <0.269.0> Running boot step worker_pool defined by app rabbit
+2019-04-06 17:05:54.511 [info] <0.269.0> Running boot step database defined by app rabbit
+2019-04-06 17:05:54.512 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-06 17:05:54.586 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-06 17:05:54.586 [info] <0.269.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2019-04-06 17:05:54.586 [info] <0.269.0> Running boot step database_sync defined by app rabbit
+2019-04-06 17:05:54.586 [info] <0.269.0> Running boot step codec_correctness_check defined by app rabbit
+2019-04-06 17:05:54.586 [info] <0.269.0> Running boot step external_infrastructure defined by app rabbit
+2019-04-06 17:05:54.586 [info] <0.269.0> Running boot step rabbit_registry defined by app rabbit
+2019-04-06 17:05:54.586 [info] <0.269.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2019-04-06 17:05:54.586 [info] <0.269.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2019-04-06 17:05:54.586 [info] <0.269.0> Running boot step rabbit_event defined by app rabbit
+2019-04-06 17:05:54.586 [info] <0.269.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2019-04-06 17:05:54.586 [info] <0.269.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2019-04-06 17:05:54.587 [info] <0.269.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2019-04-06 17:05:54.587 [info] <0.269.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2019-04-06 17:05:54.587 [info] <0.269.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2019-04-06 17:05:54.587 [info] <0.269.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2019-04-06 17:05:54.587 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2019-04-06 17:05:54.587 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2019-04-06 17:05:54.587 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2019-04-06 17:05:54.587 [info] <0.269.0> Running boot step rabbit_priority_queue defined by app rabbit
+2019-04-06 17:05:54.587 [info] <0.269.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2019-04-06 17:05:54.587 [info] <0.269.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2019-04-06 17:05:54.587 [info] <0.269.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2019-04-06 17:05:54.587 [info] <0.269.0> Running boot step kernel_ready defined by app rabbit
+2019-04-06 17:05:54.587 [info] <0.269.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2019-04-06 17:05:54.587 [info] <0.269.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2019-04-06 17:05:54.595 [info] <0.269.0> Running boot step guid_generator defined by app rabbit
+2019-04-06 17:05:54.611 [info] <0.269.0> Running boot step rabbit_node_monitor defined by app rabbit
+2019-04-06 17:05:54.611 [info] <0.313.0> Starting rabbit_node_monitor
+2019-04-06 17:05:54.612 [info] <0.269.0> Running boot step delegate_sup defined by app rabbit
+2019-04-06 17:05:54.612 [info] <0.269.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2019-04-06 17:05:54.613 [info] <0.269.0> Running boot step core_initialized defined by app rabbit
+2019-04-06 17:05:54.613 [info] <0.269.0> Running boot step upgrade_queues defined by app rabbit
+2019-04-06 17:05:54.626 [info] <0.269.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2019-04-06 17:05:54.627 [info] <0.269.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2019-04-06 17:05:54.627 [info] <0.269.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2019-04-06 17:05:54.627 [info] <0.269.0> Running boot step rabbit_policies defined by app rabbit
+2019-04-06 17:05:54.627 [info] <0.269.0> Running boot step rabbit_policy defined by app rabbit
+2019-04-06 17:05:54.628 [info] <0.269.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2019-04-06 17:05:54.628 [info] <0.269.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2019-04-06 17:05:54.628 [info] <0.269.0> Running boot step recovery defined by app rabbit
+2019-04-06 17:05:54.628 [info] <0.340.0> Making sure data directory '/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2019-04-06 17:05:54.638 [info] <0.340.0> Starting message stores for vhost '/'
+2019-04-06 17:05:54.639 [info] <0.344.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2019-04-06 17:05:54.649 [info] <0.340.0> Started message store of type transient for vhost '/'
+2019-04-06 17:05:54.649 [info] <0.347.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2019-04-06 17:05:54.650 [warning] <0.347.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2019-04-06 17:05:54.651 [info] <0.340.0> Started message store of type persistent for vhost '/'
+2019-04-06 17:05:54.653 [info] <0.269.0> Running boot step empty_db_check defined by app rabbit
+2019-04-06 17:05:54.653 [info] <0.269.0> Running boot step rabbit_looking_glass defined by app rabbit
+2019-04-06 17:05:54.653 [info] <0.269.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2019-04-06 17:05:54.653 [info] <0.269.0> Running boot step background_gc defined by app rabbit
+2019-04-06 17:05:54.653 [info] <0.269.0> Running boot step connection_tracking defined by app rabbit
+2019-04-06 17:05:54.653 [info] <0.269.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@8afbfc42
+2019-04-06 17:05:54.654 [info] <0.269.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@8afbfc42
+2019-04-06 17:05:54.654 [info] <0.269.0> Running boot step routing_ready defined by app rabbit
+2019-04-06 17:05:54.654 [info] <0.269.0> Running boot step pre_flight defined by app rabbit
+2019-04-06 17:05:54.654 [info] <0.269.0> Running boot step notify_cluster defined by app rabbit
+2019-04-06 17:05:54.654 [info] <0.269.0> Running boot step networking defined by app rabbit
+2019-04-06 17:05:54.656 [warning] <0.370.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+2019-04-06 17:05:54.657 [info] <0.384.0> started TCP listener on [::]:5672
+2019-04-06 17:05:54.657 [info] <0.269.0> Running boot step direct_client defined by app rabbit
+2019-04-06 17:05:54.658 [notice] <0.104.0> Changed loghwm of /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log to 50
+2019-04-06 17:05:54.729 [info] <0.8.0> Server startup complete; 0 plugins started.
+2019-04-06 17:06:19.163 [info] <0.8.0> Log file opened with Lager
+2019-04-06 17:06:19.860 [info] <0.269.0> 
+ Starting RabbitMQ 3.7.14 on Erlang 21.3
+ Copyright (C) 2007-2019 Pivotal Software, Inc.
+ Licensed under the MPL.  See https://www.rabbitmq.com/
+2019-04-06 17:06:19.861 [info] <0.269.0> 
+ node           : rabbit@8afbfc42
+ home dir       : /Users/jimmyjacobson
+ config file(s) : (none)
+ cookie hash    : ZQ9SkBGKy/8h3zW+av50Gw==
+ log(s)         : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log
+                : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42_upgrade.log
+ database dir   : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42
+2019-04-06 17:06:20.566 [info] <0.269.0> Running boot step pre_boot defined by app rabbit
+2019-04-06 17:06:20.566 [info] <0.269.0> Running boot step rabbit_core_metrics defined by app rabbit
+2019-04-06 17:06:20.567 [info] <0.269.0> Running boot step rabbit_alarm defined by app rabbit
+2019-04-06 17:06:20.583 [info] <0.277.0> Memory high watermark set to 6553 MiB (6871947673 bytes) of 16384 MiB (17179869184 bytes) total
+2019-04-06 17:06:20.605 [info] <0.279.0> Enabling free disk space monitoring
+2019-04-06 17:06:20.605 [info] <0.279.0> Disk free limit set to 50MB
+2019-04-06 17:06:20.612 [info] <0.269.0> Running boot step code_server_cache defined by app rabbit
+2019-04-06 17:06:20.612 [info] <0.269.0> Running boot step file_handle_cache defined by app rabbit
+2019-04-06 17:06:20.612 [info] <0.282.0> Limiting to approx 156 file handles (138 sockets)
+2019-04-06 17:06:20.613 [info] <0.283.0> FHC read buffering:  OFF
+2019-04-06 17:06:20.613 [info] <0.283.0> FHC write buffering: ON
+2019-04-06 17:06:20.613 [info] <0.269.0> Running boot step worker_pool defined by app rabbit
+2019-04-06 17:06:20.613 [info] <0.269.0> Running boot step database defined by app rabbit
+2019-04-06 17:06:20.614 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-06 17:06:20.673 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-06 17:06:20.674 [info] <0.269.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step database_sync defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step codec_correctness_check defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step external_infrastructure defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step rabbit_registry defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step rabbit_event defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2019-04-06 17:06:20.674 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2019-04-06 17:06:20.675 [info] <0.269.0> Running boot step rabbit_priority_queue defined by app rabbit
+2019-04-06 17:06:20.675 [info] <0.269.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2019-04-06 17:06:20.675 [info] <0.269.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2019-04-06 17:06:20.675 [info] <0.269.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2019-04-06 17:06:20.675 [info] <0.269.0> Running boot step kernel_ready defined by app rabbit
+2019-04-06 17:06:20.675 [info] <0.269.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2019-04-06 17:06:20.675 [info] <0.269.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2019-04-06 17:06:20.682 [info] <0.269.0> Running boot step guid_generator defined by app rabbit
+2019-04-06 17:06:20.698 [info] <0.269.0> Running boot step rabbit_node_monitor defined by app rabbit
+2019-04-06 17:06:20.698 [info] <0.313.0> Starting rabbit_node_monitor
+2019-04-06 17:06:20.698 [info] <0.269.0> Running boot step delegate_sup defined by app rabbit
+2019-04-06 17:06:20.699 [info] <0.269.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2019-04-06 17:06:20.699 [info] <0.269.0> Running boot step core_initialized defined by app rabbit
+2019-04-06 17:06:20.699 [info] <0.269.0> Running boot step upgrade_queues defined by app rabbit
+2019-04-06 17:06:20.713 [info] <0.269.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2019-04-06 17:06:20.713 [info] <0.269.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2019-04-06 17:06:20.713 [info] <0.269.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2019-04-06 17:06:20.713 [info] <0.269.0> Running boot step rabbit_policies defined by app rabbit
+2019-04-06 17:06:20.714 [info] <0.269.0> Running boot step rabbit_policy defined by app rabbit
+2019-04-06 17:06:20.714 [info] <0.269.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2019-04-06 17:06:20.714 [info] <0.269.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2019-04-06 17:06:20.714 [info] <0.269.0> Running boot step recovery defined by app rabbit
+2019-04-06 17:06:20.715 [info] <0.340.0> Making sure data directory '/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2019-04-06 17:06:20.725 [info] <0.340.0> Starting message stores for vhost '/'
+2019-04-06 17:06:20.725 [info] <0.344.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2019-04-06 17:06:20.736 [info] <0.340.0> Started message store of type transient for vhost '/'
+2019-04-06 17:06:20.736 [info] <0.347.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2019-04-06 17:06:20.737 [warning] <0.347.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2019-04-06 17:06:20.738 [info] <0.340.0> Started message store of type persistent for vhost '/'
+2019-04-06 17:06:20.740 [info] <0.269.0> Running boot step empty_db_check defined by app rabbit
+2019-04-06 17:06:20.740 [info] <0.269.0> Running boot step rabbit_looking_glass defined by app rabbit
+2019-04-06 17:06:20.740 [info] <0.269.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2019-04-06 17:06:20.740 [info] <0.269.0> Running boot step background_gc defined by app rabbit
+2019-04-06 17:06:20.740 [info] <0.269.0> Running boot step connection_tracking defined by app rabbit
+2019-04-06 17:06:20.740 [info] <0.269.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@8afbfc42
+2019-04-06 17:06:20.740 [info] <0.269.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@8afbfc42
+2019-04-06 17:06:20.740 [info] <0.269.0> Running boot step routing_ready defined by app rabbit
+2019-04-06 17:06:20.741 [info] <0.269.0> Running boot step pre_flight defined by app rabbit
+2019-04-06 17:06:20.741 [info] <0.269.0> Running boot step notify_cluster defined by app rabbit
+2019-04-06 17:06:20.741 [info] <0.269.0> Running boot step networking defined by app rabbit
+2019-04-06 17:06:20.743 [warning] <0.370.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+2019-04-06 17:06:20.743 [info] <0.384.0> started TCP listener on [::]:5672
+2019-04-06 17:06:20.744 [info] <0.269.0> Running boot step direct_client defined by app rabbit
+2019-04-06 17:06:20.744 [notice] <0.104.0> Changed loghwm of /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log to 50
+2019-04-06 17:06:20.820 [info] <0.8.0> Server startup complete; 0 plugins started.
+2019-04-06 17:09:32.457 [info] <0.391.0> accepting AMQP connection <0.391.0> ([::1]:59928 -> [::1]:5672)
+2019-04-06 17:09:32.459 [info] <0.391.0> connection <0.391.0> ([::1]:59928 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 17:09:32.467 [error] <0.401.0> Channel error on connection <0.391.0> ([::1]:59928 -> [::1]:5672, vhost: '/', user: 'guest'), channel 1:
+operation basic.consume caused a channel exception not_found: no queue 'hello' in vhost '/'
+2019-04-06 17:12:20.810 [info] <0.415.0> accepting AMQP connection <0.415.0> ([::1]:59960 -> [::1]:5672)
+2019-04-06 17:12:20.813 [info] <0.415.0> connection <0.415.0> ([::1]:59960 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 17:12:27.610 [info] <0.432.0> accepting AMQP connection <0.432.0> ([::1]:59966 -> [::1]:5672)
+2019-04-06 17:12:27.613 [info] <0.432.0> connection <0.432.0> ([::1]:59966 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 17:12:27.617 [info] <0.432.0> closing AMQP connection <0.432.0> ([::1]:59966 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-06 17:12:32.461 [error] <0.391.0> closing AMQP connection <0.391.0> ([::1]:59928 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-06 17:13:03.972 [info] <0.449.0> accepting AMQP connection <0.449.0> ([::1]:60042 -> [::1]:5672)
+2019-04-06 17:13:03.974 [info] <0.449.0> connection <0.449.0> ([::1]:60042 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 17:13:12.500 [info] <0.466.0> accepting AMQP connection <0.466.0> ([::1]:60046 -> [::1]:5672)
+2019-04-06 17:13:12.502 [info] <0.466.0> connection <0.466.0> ([::1]:60046 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-06 17:13:12.505 [info] <0.466.0> closing AMQP connection <0.466.0> ([::1]:60046 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-06 17:17:03.978 [error] <0.449.0> closing AMQP connection <0.449.0> ([::1]:60042 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-06 17:17:20.817 [error] <0.415.0> closing AMQP connection <0.415.0> ([::1]:59960 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-07 15:42:17.594 [info] <0.8.0> Log file opened with Lager
+2019-04-07 15:42:18.415 [info] <0.269.0> 
+ Starting RabbitMQ 3.7.14 on Erlang 21.3
+ Copyright (C) 2007-2019 Pivotal Software, Inc.
+ Licensed under the MPL.  See https://www.rabbitmq.com/
+2019-04-07 15:42:18.415 [info] <0.269.0> 
+ node           : rabbit@8afbfc42
+ home dir       : /Users/jimmyjacobson
+ config file(s) : (none)
+ cookie hash    : ZQ9SkBGKy/8h3zW+av50Gw==
+ log(s)         : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log
+                : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42_upgrade.log
+ database dir   : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42
+2019-04-07 15:42:19.262 [info] <0.269.0> Running boot step pre_boot defined by app rabbit
+2019-04-07 15:42:19.262 [info] <0.269.0> Running boot step rabbit_core_metrics defined by app rabbit
+2019-04-07 15:42:19.262 [info] <0.269.0> Running boot step rabbit_alarm defined by app rabbit
+2019-04-07 15:42:19.284 [info] <0.277.0> Memory high watermark set to 6553 MiB (6871947673 bytes) of 16384 MiB (17179869184 bytes) total
+2019-04-07 15:42:19.310 [info] <0.279.0> Enabling free disk space monitoring
+2019-04-07 15:42:19.310 [info] <0.279.0> Disk free limit set to 50MB
+2019-04-07 15:42:19.317 [info] <0.269.0> Running boot step code_server_cache defined by app rabbit
+2019-04-07 15:42:19.317 [info] <0.269.0> Running boot step file_handle_cache defined by app rabbit
+2019-04-07 15:42:19.317 [info] <0.282.0> Limiting to approx 156 file handles (138 sockets)
+2019-04-07 15:42:19.317 [info] <0.283.0> FHC read buffering:  OFF
+2019-04-07 15:42:19.317 [info] <0.283.0> FHC write buffering: ON
+2019-04-07 15:42:19.318 [info] <0.269.0> Running boot step worker_pool defined by app rabbit
+2019-04-07 15:42:19.319 [info] <0.269.0> Running boot step database defined by app rabbit
+2019-04-07 15:42:19.319 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-07 15:42:19.375 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-07 15:42:19.375 [info] <0.269.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2019-04-07 15:42:19.375 [info] <0.269.0> Running boot step database_sync defined by app rabbit
+2019-04-07 15:42:19.375 [info] <0.269.0> Running boot step codec_correctness_check defined by app rabbit
+2019-04-07 15:42:19.375 [info] <0.269.0> Running boot step external_infrastructure defined by app rabbit
+2019-04-07 15:42:19.375 [info] <0.269.0> Running boot step rabbit_registry defined by app rabbit
+2019-04-07 15:42:19.375 [info] <0.269.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2019-04-07 15:42:19.375 [info] <0.269.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2019-04-07 15:42:19.375 [info] <0.269.0> Running boot step rabbit_event defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_priority_queue defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step kernel_ready defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2019-04-07 15:42:19.376 [info] <0.269.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2019-04-07 15:42:19.386 [info] <0.269.0> Running boot step guid_generator defined by app rabbit
+2019-04-07 15:42:19.399 [info] <0.269.0> Running boot step rabbit_node_monitor defined by app rabbit
+2019-04-07 15:42:19.399 [info] <0.313.0> Starting rabbit_node_monitor
+2019-04-07 15:42:19.400 [info] <0.269.0> Running boot step delegate_sup defined by app rabbit
+2019-04-07 15:42:19.400 [info] <0.269.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2019-04-07 15:42:19.400 [info] <0.269.0> Running boot step core_initialized defined by app rabbit
+2019-04-07 15:42:19.400 [info] <0.269.0> Running boot step upgrade_queues defined by app rabbit
+2019-04-07 15:42:19.413 [info] <0.269.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2019-04-07 15:42:19.413 [info] <0.269.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2019-04-07 15:42:19.413 [info] <0.269.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2019-04-07 15:42:19.413 [info] <0.269.0> Running boot step rabbit_policies defined by app rabbit
+2019-04-07 15:42:19.414 [info] <0.269.0> Running boot step rabbit_policy defined by app rabbit
+2019-04-07 15:42:19.414 [info] <0.269.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2019-04-07 15:42:19.414 [info] <0.269.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2019-04-07 15:42:19.414 [info] <0.269.0> Running boot step recovery defined by app rabbit
+2019-04-07 15:42:19.415 [info] <0.340.0> Making sure data directory '/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2019-04-07 15:42:19.426 [info] <0.340.0> Starting message stores for vhost '/'
+2019-04-07 15:42:19.426 [info] <0.344.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2019-04-07 15:42:19.438 [info] <0.340.0> Started message store of type transient for vhost '/'
+2019-04-07 15:42:19.438 [info] <0.347.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2019-04-07 15:42:19.439 [warning] <0.347.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2019-04-07 15:42:19.440 [info] <0.340.0> Started message store of type persistent for vhost '/'
+2019-04-07 15:42:19.441 [info] <0.269.0> Running boot step empty_db_check defined by app rabbit
+2019-04-07 15:42:19.441 [info] <0.269.0> Running boot step rabbit_looking_glass defined by app rabbit
+2019-04-07 15:42:19.442 [info] <0.269.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2019-04-07 15:42:19.442 [info] <0.269.0> Running boot step background_gc defined by app rabbit
+2019-04-07 15:42:19.442 [info] <0.269.0> Running boot step connection_tracking defined by app rabbit
+2019-04-07 15:42:19.442 [info] <0.269.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@8afbfc42
+2019-04-07 15:42:19.442 [info] <0.269.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@8afbfc42
+2019-04-07 15:42:19.442 [info] <0.269.0> Running boot step routing_ready defined by app rabbit
+2019-04-07 15:42:19.442 [info] <0.269.0> Running boot step pre_flight defined by app rabbit
+2019-04-07 15:42:19.442 [info] <0.269.0> Running boot step notify_cluster defined by app rabbit
+2019-04-07 15:42:19.442 [info] <0.269.0> Running boot step networking defined by app rabbit
+2019-04-07 15:42:19.445 [warning] <0.370.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+2019-04-07 15:42:19.446 [info] <0.384.0> started TCP listener on [::]:5672
+2019-04-07 15:42:19.446 [info] <0.269.0> Running boot step direct_client defined by app rabbit
+2019-04-07 15:42:19.447 [notice] <0.104.0> Changed loghwm of /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log to 50
+2019-04-07 15:42:19.521 [info] <0.8.0> Server startup complete; 0 plugins started.
+2019-04-07 16:00:56.674 [info] <0.8.0> Log file opened with Lager
+2019-04-07 16:00:57.685 [info] <0.279.0> 
+ Starting RabbitMQ 3.7.14 on Erlang 21.3
+ Copyright (C) 2007-2019 Pivotal Software, Inc.
+ Licensed under the MPL.  See https://www.rabbitmq.com/
+2019-04-07 16:00:57.686 [info] <0.279.0> 
+ node           : rabbit@8afbfc42
+ home dir       : /Users/jimmyjacobson
+ config file(s) : (none)
+ cookie hash    : ZQ9SkBGKy/8h3zW+av50Gw==
+ log(s)         : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log
+                : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42_upgrade.log
+ database dir   : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42
+2019-04-07 16:00:58.682 [info] <0.279.0> Running boot step pre_boot defined by app rabbit
+2019-04-07 16:00:58.682 [info] <0.279.0> Running boot step rabbit_core_metrics defined by app rabbit
+2019-04-07 16:00:58.683 [info] <0.279.0> Running boot step rabbit_alarm defined by app rabbit
+2019-04-07 16:00:58.700 [info] <0.287.0> Memory high watermark set to 6553 MiB (6871947673 bytes) of 16384 MiB (17179869184 bytes) total
+2019-04-07 16:00:58.723 [info] <0.289.0> Enabling free disk space monitoring
+2019-04-07 16:00:58.723 [info] <0.289.0> Disk free limit set to 50MB
+2019-04-07 16:00:58.729 [info] <0.279.0> Running boot step code_server_cache defined by app rabbit
+2019-04-07 16:00:58.730 [info] <0.279.0> Running boot step file_handle_cache defined by app rabbit
+2019-04-07 16:00:58.730 [info] <0.292.0> Limiting to approx 156 file handles (138 sockets)
+2019-04-07 16:00:58.730 [info] <0.293.0> FHC read buffering:  OFF
+2019-04-07 16:00:58.730 [info] <0.293.0> FHC write buffering: ON
+2019-04-07 16:00:58.731 [info] <0.279.0> Running boot step worker_pool defined by app rabbit
+2019-04-07 16:00:58.731 [info] <0.279.0> Running boot step database defined by app rabbit
+2019-04-07 16:00:58.732 [info] <0.279.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-07 16:00:58.798 [info] <0.279.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-07 16:00:58.798 [info] <0.279.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2019-04-07 16:00:58.798 [info] <0.279.0> Running boot step database_sync defined by app rabbit
+2019-04-07 16:00:58.798 [info] <0.279.0> Running boot step codec_correctness_check defined by app rabbit
+2019-04-07 16:00:58.798 [info] <0.279.0> Running boot step external_infrastructure defined by app rabbit
+2019-04-07 16:00:58.798 [info] <0.279.0> Running boot step rabbit_registry defined by app rabbit
+2019-04-07 16:00:58.798 [info] <0.279.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2019-04-07 16:00:58.798 [info] <0.279.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2019-04-07 16:00:58.798 [info] <0.279.0> Running boot step rabbit_event defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_priority_queue defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step kernel_ready defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2019-04-07 16:00:58.799 [info] <0.279.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2019-04-07 16:00:58.807 [info] <0.279.0> Running boot step guid_generator defined by app rabbit
+2019-04-07 16:00:58.823 [info] <0.279.0> Running boot step rabbit_node_monitor defined by app rabbit
+2019-04-07 16:00:58.823 [info] <0.323.0> Starting rabbit_node_monitor
+2019-04-07 16:00:58.823 [info] <0.279.0> Running boot step delegate_sup defined by app rabbit
+2019-04-07 16:00:58.824 [info] <0.279.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2019-04-07 16:00:58.824 [info] <0.279.0> Running boot step core_initialized defined by app rabbit
+2019-04-07 16:00:58.824 [info] <0.279.0> Running boot step upgrade_queues defined by app rabbit
+2019-04-07 16:00:58.847 [info] <0.279.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2019-04-07 16:00:58.847 [info] <0.279.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2019-04-07 16:00:58.847 [info] <0.279.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2019-04-07 16:00:58.848 [info] <0.279.0> Running boot step rabbit_policies defined by app rabbit
+2019-04-07 16:00:58.848 [info] <0.279.0> Running boot step rabbit_policy defined by app rabbit
+2019-04-07 16:00:58.849 [info] <0.279.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2019-04-07 16:00:58.849 [info] <0.279.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2019-04-07 16:00:58.849 [info] <0.279.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2019-04-07 16:00:58.849 [info] <0.279.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2019-04-07 16:00:58.849 [info] <0.279.0> Management plugin: using rates mode 'basic'
+2019-04-07 16:00:58.849 [info] <0.279.0> Running boot step recovery defined by app rabbit
+2019-04-07 16:00:58.850 [info] <0.354.0> Making sure data directory '/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2019-04-07 16:00:58.863 [info] <0.354.0> Starting message stores for vhost '/'
+2019-04-07 16:00:58.863 [info] <0.358.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2019-04-07 16:00:58.869 [info] <0.354.0> Started message store of type transient for vhost '/'
+2019-04-07 16:00:58.870 [info] <0.361.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2019-04-07 16:00:58.870 [warning] <0.361.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2019-04-07 16:00:58.871 [info] <0.354.0> Started message store of type persistent for vhost '/'
+2019-04-07 16:00:58.873 [info] <0.279.0> Running boot step load_definitions defined by app rabbitmq_management
+2019-04-07 16:00:58.873 [info] <0.279.0> Running boot step empty_db_check defined by app rabbit
+2019-04-07 16:00:58.873 [info] <0.279.0> Running boot step rabbit_looking_glass defined by app rabbit
+2019-04-07 16:00:58.873 [info] <0.279.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2019-04-07 16:00:58.873 [info] <0.279.0> Running boot step background_gc defined by app rabbit
+2019-04-07 16:00:58.873 [info] <0.279.0> Running boot step connection_tracking defined by app rabbit
+2019-04-07 16:00:58.874 [info] <0.279.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@8afbfc42
+2019-04-07 16:00:58.874 [info] <0.279.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@8afbfc42
+2019-04-07 16:00:58.874 [info] <0.279.0> Running boot step routing_ready defined by app rabbit
+2019-04-07 16:00:58.874 [info] <0.279.0> Running boot step pre_flight defined by app rabbit
+2019-04-07 16:00:58.874 [info] <0.279.0> Running boot step notify_cluster defined by app rabbit
+2019-04-07 16:00:58.874 [info] <0.279.0> Running boot step networking defined by app rabbit
+2019-04-07 16:00:58.876 [warning] <0.384.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+2019-04-07 16:00:58.877 [info] <0.398.0> started TCP listener on [::]:5672
+2019-04-07 16:00:58.878 [info] <0.279.0> Running boot step direct_client defined by app rabbit
+2019-04-07 16:00:59.019 [info] <0.448.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2019-04-07 16:00:59.020 [info] <0.554.0> Statistics database started.
+2019-04-07 16:00:59.020 [notice] <0.104.0> Changed loghwm of /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log to 50
+2019-04-07 16:00:59.095 [info] <0.8.0> Server startup complete; 3 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * rabbitmq_management_agent
+2019-04-07 16:03:01.023 [info] <0.710.0> accepting AMQP connection <0.710.0> ([::1]:50879 -> [::1]:5672)
+2019-04-07 16:03:01.026 [info] <0.710.0> connection <0.710.0> ([::1]:50879 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:03:46.741 [info] <0.764.0> accepting AMQP connection <0.764.0> ([::1]:50900 -> [::1]:5672)
+2019-04-07 16:03:46.744 [info] <0.764.0> connection <0.764.0> ([::1]:50900 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:03:46.748 [info] <0.764.0> closing AMQP connection <0.764.0> ([::1]:50900 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:06:17.699 [info] <0.958.0> accepting AMQP connection <0.958.0> ([::1]:50923 -> [::1]:5672)
+2019-04-07 16:06:17.702 [info] <0.958.0> connection <0.958.0> ([::1]:50923 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:06:17.705 [info] <0.958.0> closing AMQP connection <0.958.0> ([::1]:50923 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:06:17.933 [info] <0.973.0> accepting AMQP connection <0.973.0> ([::1]:50926 -> [::1]:5672)
+2019-04-07 16:06:17.935 [info] <0.973.0> connection <0.973.0> ([::1]:50926 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:06:17.938 [info] <0.973.0> closing AMQP connection <0.973.0> ([::1]:50926 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:06:18.082 [info] <0.988.0> accepting AMQP connection <0.988.0> ([::1]:50929 -> [::1]:5672)
+2019-04-07 16:06:18.086 [info] <0.988.0> connection <0.988.0> ([::1]:50929 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:06:18.091 [info] <0.988.0> closing AMQP connection <0.988.0> ([::1]:50929 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:06:18.248 [info] <0.1003.0> accepting AMQP connection <0.1003.0> ([::1]:50932 -> [::1]:5672)
+2019-04-07 16:06:18.251 [info] <0.1003.0> connection <0.1003.0> ([::1]:50932 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:06:18.254 [info] <0.1003.0> closing AMQP connection <0.1003.0> ([::1]:50932 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:06:18.426 [info] <0.1018.0> accepting AMQP connection <0.1018.0> ([::1]:50935 -> [::1]:5672)
+2019-04-07 16:06:18.428 [info] <0.1018.0> connection <0.1018.0> ([::1]:50935 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:06:18.432 [info] <0.1018.0> closing AMQP connection <0.1018.0> ([::1]:50935 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:06:18.600 [info] <0.1033.0> accepting AMQP connection <0.1033.0> ([::1]:50938 -> [::1]:5672)
+2019-04-07 16:06:18.603 [info] <0.1033.0> connection <0.1033.0> ([::1]:50938 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:06:18.607 [info] <0.1033.0> closing AMQP connection <0.1033.0> ([::1]:50938 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:06:18.776 [info] <0.1048.0> accepting AMQP connection <0.1048.0> ([::1]:50941 -> [::1]:5672)
+2019-04-07 16:06:18.779 [info] <0.1048.0> connection <0.1048.0> ([::1]:50941 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:06:18.783 [info] <0.1048.0> closing AMQP connection <0.1048.0> ([::1]:50941 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:06:18.938 [info] <0.1063.0> accepting AMQP connection <0.1063.0> ([::1]:50944 -> [::1]:5672)
+2019-04-07 16:06:18.941 [info] <0.1063.0> connection <0.1063.0> ([::1]:50944 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:06:18.944 [info] <0.1063.0> closing AMQP connection <0.1063.0> ([::1]:50944 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:06:19.102 [info] <0.1078.0> accepting AMQP connection <0.1078.0> ([::1]:50947 -> [::1]:5672)
+2019-04-07 16:06:19.105 [info] <0.1078.0> connection <0.1078.0> ([::1]:50947 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:06:19.110 [info] <0.1078.0> closing AMQP connection <0.1078.0> ([::1]:50947 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:06:19.318 [info] <0.1093.0> accepting AMQP connection <0.1093.0> ([::1]:50950 -> [::1]:5672)
+2019-04-07 16:06:19.320 [info] <0.1093.0> connection <0.1093.0> ([::1]:50950 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:06:19.323 [info] <0.1093.0> closing AMQP connection <0.1093.0> ([::1]:50950 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:07:17.536 [info] <0.1170.0> accepting AMQP connection <0.1170.0> ([::1]:50968 -> [::1]:5672)
+2019-04-07 16:07:17.538 [info] <0.1170.0> connection <0.1170.0> ([::1]:50968 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:07:17.541 [info] <0.1170.0> closing AMQP connection <0.1170.0> ([::1]:50968 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:07:17.694 [info] <0.1185.0> accepting AMQP connection <0.1185.0> ([::1]:50971 -> [::1]:5672)
+2019-04-07 16:07:17.697 [info] <0.1185.0> connection <0.1185.0> ([::1]:50971 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:07:17.701 [info] <0.1185.0> closing AMQP connection <0.1185.0> ([::1]:50971 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:07:17.832 [info] <0.1200.0> accepting AMQP connection <0.1200.0> ([::1]:50974 -> [::1]:5672)
+2019-04-07 16:07:17.834 [info] <0.1200.0> connection <0.1200.0> ([::1]:50974 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:07:17.838 [info] <0.1200.0> closing AMQP connection <0.1200.0> ([::1]:50974 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:07:17.980 [info] <0.1215.0> accepting AMQP connection <0.1215.0> ([::1]:50977 -> [::1]:5672)
+2019-04-07 16:07:17.983 [info] <0.1215.0> connection <0.1215.0> ([::1]:50977 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:07:17.986 [info] <0.1215.0> closing AMQP connection <0.1215.0> ([::1]:50977 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:07:18.131 [info] <0.1230.0> accepting AMQP connection <0.1230.0> ([::1]:50980 -> [::1]:5672)
+2019-04-07 16:07:18.134 [info] <0.1230.0> connection <0.1230.0> ([::1]:50980 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:07:18.137 [info] <0.1230.0> closing AMQP connection <0.1230.0> ([::1]:50980 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:07:18.275 [info] <0.1245.0> accepting AMQP connection <0.1245.0> ([::1]:50983 -> [::1]:5672)
+2019-04-07 16:07:18.278 [info] <0.1245.0> connection <0.1245.0> ([::1]:50983 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:07:18.282 [info] <0.1245.0> closing AMQP connection <0.1245.0> ([::1]:50983 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:07:18.418 [info] <0.1260.0> accepting AMQP connection <0.1260.0> ([::1]:50986 -> [::1]:5672)
+2019-04-07 16:07:18.421 [info] <0.1260.0> connection <0.1260.0> ([::1]:50986 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:07:18.424 [info] <0.1260.0> closing AMQP connection <0.1260.0> ([::1]:50986 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:07:18.713 [info] <0.1275.0> accepting AMQP connection <0.1275.0> ([::1]:50989 -> [::1]:5672)
+2019-04-07 16:07:18.716 [info] <0.1275.0> connection <0.1275.0> ([::1]:50989 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:07:18.719 [info] <0.1275.0> closing AMQP connection <0.1275.0> ([::1]:50989 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:07:18.881 [info] <0.1290.0> accepting AMQP connection <0.1290.0> ([::1]:50992 -> [::1]:5672)
+2019-04-07 16:07:18.884 [info] <0.1290.0> connection <0.1290.0> ([::1]:50992 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:07:18.887 [info] <0.1290.0> closing AMQP connection <0.1290.0> ([::1]:50992 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 16:07:19.032 [info] <0.1305.0> accepting AMQP connection <0.1305.0> ([::1]:50995 -> [::1]:5672)
+2019-04-07 16:07:19.034 [info] <0.1305.0> connection <0.1305.0> ([::1]:50995 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 16:07:19.038 [info] <0.1305.0> closing AMQP connection <0.1305.0> ([::1]:50995 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 17:03:14.338 [info] <0.1553.0> accepting AMQP connection <0.1553.0> ([::1]:51539 -> [::1]:5672)
+2019-04-07 17:03:14.341 [info] <0.1553.0> connection <0.1553.0> ([::1]:51539 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 17:03:21.406 [info] <0.1571.0> accepting AMQP connection <0.1571.0> ([::1]:51545 -> [::1]:5672)
+2019-04-07 17:03:21.409 [info] <0.1571.0> connection <0.1571.0> ([::1]:51545 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 17:03:21.413 [info] <0.1571.0> closing AMQP connection <0.1571.0> ([::1]:51545 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 17:03:55.408 [info] <0.1586.0> accepting AMQP connection <0.1586.0> ([::1]:51549 -> [::1]:5672)
+2019-04-07 17:03:55.411 [info] <0.1586.0> connection <0.1586.0> ([::1]:51549 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 17:04:03.859 [info] <0.1607.0> accepting AMQP connection <0.1607.0> ([::1]:51554 -> [::1]:5672)
+2019-04-07 17:04:03.862 [info] <0.1607.0> connection <0.1607.0> ([::1]:51554 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 17:04:03.866 [info] <0.1607.0> closing AMQP connection <0.1607.0> ([::1]:51554 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 17:04:04.760 [info] <0.1622.0> accepting AMQP connection <0.1622.0> ([::1]:51557 -> [::1]:5672)
+2019-04-07 17:04:04.763 [info] <0.1622.0> connection <0.1622.0> ([::1]:51557 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 17:04:04.767 [info] <0.1622.0> closing AMQP connection <0.1622.0> ([::1]:51557 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 17:04:33.704 [warning] <0.1553.0> closing AMQP connection <0.1553.0> ([::1]:51539 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-07 17:04:33.735 [info] <0.1641.0> accepting AMQP connection <0.1641.0> ([::1]:51563 -> [::1]:5672)
+2019-04-07 17:04:33.738 [info] <0.1641.0> connection <0.1641.0> ([::1]:51563 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 17:04:40.011 [info] <0.1658.0> accepting AMQP connection <0.1658.0> ([::1]:51566 -> [::1]:5672)
+2019-04-07 17:04:40.014 [info] <0.1658.0> connection <0.1658.0> ([::1]:51566 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 17:04:40.018 [info] <0.1658.0> closing AMQP connection <0.1658.0> ([::1]:51566 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 17:06:01.088 [error] <0.710.0> closing AMQP connection <0.710.0> ([::1]:50879 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-07 17:06:55.413 [error] <0.1586.0> closing AMQP connection <0.1586.0> ([::1]:51549 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-07 22:11:02.309 [info] <0.1916.0> accepting AMQP connection <0.1916.0> ([::1]:55137 -> [::1]:5672)
+2019-04-07 22:11:02.324 [info] <0.1916.0> connection <0.1916.0> ([::1]:55137 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 22:11:02.328 [info] <0.1916.0> closing AMQP connection <0.1916.0> ([::1]:55137 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 22:11:07.662 [info] <0.1931.0> accepting AMQP connection <0.1931.0> ([::1]:55140 -> [::1]:5672)
+2019-04-07 22:11:07.664 [info] <0.1931.0> connection <0.1931.0> ([::1]:55140 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 22:11:12.450 [info] <0.1948.0> accepting AMQP connection <0.1948.0> ([::1]:55143 -> [::1]:5672)
+2019-04-07 22:11:12.454 [info] <0.1948.0> connection <0.1948.0> ([::1]:55143 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 22:11:12.457 [info] <0.1948.0> closing AMQP connection <0.1948.0> ([::1]:55143 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-07 22:13:50.152 [error] <0.1641.0> closing AMQP connection <0.1641.0> ([::1]:51563 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-07 22:25:23.582 [info] <0.1999.0> accepting AMQP connection <0.1999.0> ([::1]:55201 -> [::1]:5672)
+2019-04-07 22:25:23.585 [info] <0.1999.0> connection <0.1999.0> ([::1]:55201 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 22:25:45.551 [info] <0.2012.0> accepting AMQP connection <0.2012.0> ([::1]:55206 -> [::1]:5672)
+2019-04-07 22:25:45.554 [info] <0.2012.0> connection <0.2012.0> ([::1]:55206 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 22:25:57.579 [info] <0.2024.0> accepting AMQP connection <0.2024.0> ([::1]:55209 -> [::1]:5672)
+2019-04-07 22:25:57.582 [info] <0.2024.0> connection <0.2024.0> ([::1]:55209 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 22:26:07.074 [info] <0.2036.0> accepting AMQP connection <0.2036.0> ([::1]:55213 -> [::1]:5672)
+2019-04-07 22:26:07.077 [info] <0.2036.0> connection <0.2036.0> ([::1]:55213 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 22:26:18.346 [info] <0.2048.0> accepting AMQP connection <0.2048.0> ([::1]:55216 -> [::1]:5672)
+2019-04-07 22:26:18.349 [info] <0.2048.0> connection <0.2048.0> ([::1]:55216 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 22:26:58.011 [info] <0.2083.0> accepting AMQP connection <0.2083.0> ([::1]:55225 -> [::1]:5672)
+2019-04-07 22:26:58.014 [info] <0.2083.0> connection <0.2083.0> ([::1]:55225 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 22:28:23.588 [error] <0.1999.0> closing AMQP connection <0.1999.0> ([::1]:55201 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-07 22:28:43.019 [warning] <0.2012.0> closing AMQP connection <0.2012.0> ([::1]:55206 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-07 22:28:43.020 [warning] <0.2024.0> closing AMQP connection <0.2024.0> ([::1]:55209 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-07 22:28:43.020 [warning] <0.2036.0> closing AMQP connection <0.2036.0> ([::1]:55213 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-07 22:28:43.021 [warning] <0.2048.0> closing AMQP connection <0.2048.0> ([::1]:55216 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-07 22:29:24.190 [info] <0.2253.0> accepting AMQP connection <0.2253.0> ([::1]:55255 -> [::1]:5672)
+2019-04-07 22:29:24.193 [info] <0.2253.0> connection <0.2253.0> ([::1]:55255 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 22:29:35.004 [error] <0.1931.0> closing AMQP connection <0.1931.0> ([::1]:55140 -> [::1]:5672):
+{writer,send_failed,{error,timeout}}
+2019-04-07 22:29:46.749 [info] <0.2299.0> accepting AMQP connection <0.2299.0> ([::1]:55258 -> [::1]:5672)
+2019-04-07 22:29:46.752 [info] <0.2299.0> connection <0.2299.0> ([::1]:55258 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 22:31:58.018 [error] <0.2083.0> closing AMQP connection <0.2083.0> ([::1]:55225 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-07 22:32:24.195 [error] <0.2253.0> closing AMQP connection <0.2253.0> ([::1]:55255 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-07 22:32:46.755 [error] <0.2299.0> closing AMQP connection <0.2299.0> ([::1]:55258 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-07 22:57:34.809 [info] <0.3366.0> accepting AMQP connection <0.3366.0> ([::1]:55506 -> [::1]:5672)
+2019-04-07 22:57:34.812 [info] <0.3366.0> connection <0.3366.0> ([::1]:55506 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 22:57:40.810 [info] <0.3388.0> accepting AMQP connection <0.3388.0> ([::1]:55510 -> [::1]:5672)
+2019-04-07 22:57:40.813 [info] <0.3388.0> connection <0.3388.0> ([::1]:55510 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 23:00:34.889 [error] <0.3366.0> closing AMQP connection <0.3366.0> ([::1]:55506 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-07 23:01:40.833 [error] <0.3388.0> closing AMQP connection <0.3388.0> ([::1]:55510 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-07 23:02:42.646 [info] <0.8.0> Log file opened with Lager
+2019-04-07 23:02:43.708 [info] <0.283.0> 
+ Starting RabbitMQ 3.7.14 on Erlang 21.3
+ Copyright (C) 2007-2019 Pivotal Software, Inc.
+ Licensed under the MPL.  See https://www.rabbitmq.com/
+2019-04-07 23:02:43.709 [info] <0.283.0> 
+ node           : rabbit@8afbfc42
+ home dir       : /Users/jimmyjacobson
+ config file(s) : (none)
+ cookie hash    : ZQ9SkBGKy/8h3zW+av50Gw==
+ log(s)         : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log
+                : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42_upgrade.log
+ database dir   : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42
+2019-04-07 23:02:44.733 [info] <0.283.0> Running boot step pre_boot defined by app rabbit
+2019-04-07 23:02:44.733 [info] <0.283.0> Running boot step rabbit_core_metrics defined by app rabbit
+2019-04-07 23:02:44.734 [info] <0.283.0> Running boot step rabbit_alarm defined by app rabbit
+2019-04-07 23:02:44.751 [info] <0.291.0> Memory high watermark set to 6553 MiB (6871947673 bytes) of 16384 MiB (17179869184 bytes) total
+2019-04-07 23:02:44.775 [info] <0.293.0> Enabling free disk space monitoring
+2019-04-07 23:02:44.775 [info] <0.293.0> Disk free limit set to 50MB
+2019-04-07 23:02:44.782 [info] <0.283.0> Running boot step code_server_cache defined by app rabbit
+2019-04-07 23:02:44.782 [info] <0.283.0> Running boot step file_handle_cache defined by app rabbit
+2019-04-07 23:02:44.782 [info] <0.296.0> Limiting to approx 156 file handles (138 sockets)
+2019-04-07 23:02:44.782 [info] <0.297.0> FHC read buffering:  OFF
+2019-04-07 23:02:44.782 [info] <0.297.0> FHC write buffering: ON
+2019-04-07 23:02:44.782 [info] <0.283.0> Running boot step worker_pool defined by app rabbit
+2019-04-07 23:02:44.783 [info] <0.283.0> Running boot step database defined by app rabbit
+2019-04-07 23:02:44.783 [info] <0.283.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-07 23:02:44.859 [info] <0.283.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-07 23:02:44.859 [info] <0.283.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2019-04-07 23:02:44.859 [info] <0.283.0> Running boot step database_sync defined by app rabbit
+2019-04-07 23:02:44.859 [info] <0.283.0> Running boot step codec_correctness_check defined by app rabbit
+2019-04-07 23:02:44.859 [info] <0.283.0> Running boot step external_infrastructure defined by app rabbit
+2019-04-07 23:02:44.859 [info] <0.283.0> Running boot step rabbit_registry defined by app rabbit
+2019-04-07 23:02:44.859 [info] <0.283.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2019-04-07 23:02:44.859 [info] <0.283.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_event defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_priority_queue defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step kernel_ready defined by app rabbit
+2019-04-07 23:02:44.860 [info] <0.283.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2019-04-07 23:02:44.861 [info] <0.283.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2019-04-07 23:02:44.869 [info] <0.283.0> Running boot step guid_generator defined by app rabbit
+2019-04-07 23:02:44.884 [info] <0.283.0> Running boot step rabbit_node_monitor defined by app rabbit
+2019-04-07 23:02:44.885 [info] <0.327.0> Starting rabbit_node_monitor
+2019-04-07 23:02:44.885 [info] <0.283.0> Running boot step delegate_sup defined by app rabbit
+2019-04-07 23:02:44.885 [info] <0.283.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2019-04-07 23:02:44.886 [info] <0.283.0> Running boot step core_initialized defined by app rabbit
+2019-04-07 23:02:44.886 [info] <0.283.0> Running boot step upgrade_queues defined by app rabbit
+2019-04-07 23:02:44.908 [info] <0.283.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2019-04-07 23:02:44.909 [info] <0.283.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2019-04-07 23:02:44.909 [info] <0.283.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2019-04-07 23:02:44.909 [info] <0.283.0> Running boot step rabbit_policies defined by app rabbit
+2019-04-07 23:02:44.910 [info] <0.283.0> Running boot step rabbit_policy defined by app rabbit
+2019-04-07 23:02:44.910 [info] <0.283.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2019-04-07 23:02:44.910 [info] <0.283.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2019-04-07 23:02:44.910 [info] <0.283.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2019-04-07 23:02:44.910 [info] <0.283.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2019-04-07 23:02:44.910 [info] <0.283.0> Management plugin: using rates mode 'basic'
+2019-04-07 23:02:44.910 [info] <0.283.0> Running boot step recovery defined by app rabbit
+2019-04-07 23:02:44.911 [info] <0.358.0> Making sure data directory '/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2019-04-07 23:02:44.922 [info] <0.358.0> Starting message stores for vhost '/'
+2019-04-07 23:02:44.923 [info] <0.362.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2019-04-07 23:02:44.932 [info] <0.358.0> Started message store of type transient for vhost '/'
+2019-04-07 23:02:44.933 [info] <0.365.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2019-04-07 23:02:44.933 [warning] <0.365.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2019-04-07 23:02:44.934 [info] <0.358.0> Started message store of type persistent for vhost '/'
+2019-04-07 23:02:44.936 [info] <0.283.0> Running boot step load_definitions defined by app rabbitmq_management
+2019-04-07 23:02:44.936 [info] <0.283.0> Running boot step empty_db_check defined by app rabbit
+2019-04-07 23:02:44.936 [info] <0.283.0> Running boot step rabbit_looking_glass defined by app rabbit
+2019-04-07 23:02:44.937 [info] <0.283.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2019-04-07 23:02:44.937 [info] <0.283.0> Running boot step background_gc defined by app rabbit
+2019-04-07 23:02:44.937 [info] <0.283.0> Running boot step connection_tracking defined by app rabbit
+2019-04-07 23:02:44.937 [info] <0.283.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@8afbfc42
+2019-04-07 23:02:44.937 [info] <0.283.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@8afbfc42
+2019-04-07 23:02:44.937 [info] <0.283.0> Running boot step routing_ready defined by app rabbit
+2019-04-07 23:02:44.937 [info] <0.283.0> Running boot step pre_flight defined by app rabbit
+2019-04-07 23:02:44.937 [info] <0.283.0> Running boot step notify_cluster defined by app rabbit
+2019-04-07 23:02:44.937 [info] <0.283.0> Running boot step networking defined by app rabbit
+2019-04-07 23:02:44.940 [warning] <0.388.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+2019-04-07 23:02:44.940 [info] <0.402.0> started TCP listener on [::]:5672
+2019-04-07 23:02:44.941 [info] <0.283.0> Running boot step direct_client defined by app rabbit
+2019-04-07 23:02:45.074 [info] <0.452.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2019-04-07 23:02:45.074 [info] <0.558.0> Statistics database started.
+2019-04-07 23:02:45.074 [notice] <0.104.0> Changed loghwm of /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log to 50
+2019-04-07 23:02:45.153 [info] <0.8.0> Server startup complete; 3 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * rabbitmq_management_agent
+2019-04-07 23:23:46.657 [info] <0.576.0> accepting AMQP connection <0.576.0> ([::1]:55667 -> [::1]:5672)
+2019-04-07 23:23:46.660 [info] <0.576.0> connection <0.576.0> ([::1]:55667 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 23:24:01.419 [info] <0.594.0> accepting AMQP connection <0.594.0> ([::1]:55673 -> [::1]:5672)
+2019-04-07 23:24:01.422 [info] <0.594.0> connection <0.594.0> ([::1]:55673 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-07 23:27:49.031 [error] <0.576.0> closing AMQP connection <0.576.0> ([::1]:55667 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-07 23:28:03.793 [error] <0.594.0> closing AMQP connection <0.594.0> ([::1]:55673 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 13:06:35.544 [info] <0.1135.0> accepting AMQP connection <0.1135.0> ([::1]:58435 -> [::1]:5672)
+2019-04-08 13:06:35.558 [info] <0.1135.0> connection <0.1135.0> ([::1]:58435 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:06:44.126 [info] <0.1152.0> accepting AMQP connection <0.1152.0> ([::1]:58438 -> [::1]:5672)
+2019-04-08 13:06:44.128 [info] <0.1152.0> connection <0.1152.0> ([::1]:58438 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:08:47.093 [info] <0.1276.0> accepting AMQP connection <0.1276.0> ([::1]:58462 -> [::1]:5672)
+2019-04-08 13:08:47.096 [info] <0.1276.0> connection <0.1276.0> ([::1]:58462 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:08:51.473 [info] <0.1293.0> accepting AMQP connection <0.1293.0> ([::1]:58466 -> [::1]:5672)
+2019-04-08 13:08:51.476 [info] <0.1293.0> connection <0.1293.0> ([::1]:58466 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:08:51.501 [error] <0.1285.0> Channel error on connection <0.1276.0> ([::1]:58462 -> [::1]:5672, vhost: '/', user: 'guest'), channel 1:
+operation basic.ack caused a channel exception precondition_failed: unknown delivery tag 1
+2019-04-08 13:09:35.561 [error] <0.1135.0> closing AMQP connection <0.1135.0> ([::1]:58435 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 13:09:44.131 [error] <0.1152.0> closing AMQP connection <0.1152.0> ([::1]:58438 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 13:11:47.099 [error] <0.1276.0> closing AMQP connection <0.1276.0> ([::1]:58462 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 13:11:51.262 [info] <0.1431.0> accepting AMQP connection <0.1431.0> ([::1]:58498 -> [::1]:5672)
+2019-04-08 13:11:51.265 [info] <0.1431.0> connection <0.1431.0> ([::1]:58498 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:11:56.124 [info] <0.1448.0> accepting AMQP connection <0.1448.0> ([::1]:58501 -> [::1]:5672)
+2019-04-08 13:11:56.127 [info] <0.1448.0> connection <0.1448.0> ([::1]:58501 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:11:56.131 [error] <0.1440.0> Channel error on connection <0.1431.0> ([::1]:58498 -> [::1]:5672, vhost: '/', user: 'guest'), channel 1:
+operation basic.ack caused a channel exception precondition_failed: unknown delivery tag 1
+2019-04-08 13:12:50.401 [error] <0.1293.0> Error on AMQP connection <0.1293.0> ([::1]:58466 -> [::1]:5672, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "Closed via management plugin"
+2019-04-08 13:12:50.401 [info] <0.1511.0> Closing connection <0.1293.0> because "Closed via management plugin"
+2019-04-08 13:12:56.258 [info] <0.1293.0> closing AMQP connection <0.1293.0> ([::1]:58466 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-08 13:12:56.258 [info] <0.1518.0> Closing connection <0.1293.0> because "Closed via management plugin"
+2019-04-08 13:12:59.925 [error] <0.1448.0> Error on AMQP connection <0.1448.0> ([::1]:58501 -> [::1]:5672, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "Closed via management plugin"
+2019-04-08 13:12:59.925 [info] <0.1524.0> Closing connection <0.1448.0> because "Closed via management plugin"
+2019-04-08 13:13:04.521 [info] <0.1448.0> closing AMQP connection <0.1448.0> ([::1]:58501 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-08 13:13:04.521 [info] <0.1531.0> Closing connection <0.1448.0> because "Closed via management plugin"
+2019-04-08 13:13:09.619 [error] <0.1431.0> Error on AMQP connection <0.1431.0> ([::1]:58498 -> [::1]:5672, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "Closed via management plugin"
+2019-04-08 13:13:09.645 [info] <0.1537.0> Closing connection <0.1431.0> because "Closed via management plugin"
+2019-04-08 13:13:13.842 [info] <0.1431.0> closing AMQP connection <0.1431.0> ([::1]:58498 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-08 13:13:13.842 [info] <0.1543.0> Closing connection <0.1431.0> because "Closed via management plugin"
+2019-04-08 13:13:50.904 [info] <0.1560.0> accepting AMQP connection <0.1560.0> ([::1]:58526 -> [::1]:5672)
+2019-04-08 13:13:50.907 [info] <0.1560.0> connection <0.1560.0> ([::1]:58526 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:13:55.342 [info] <0.1578.0> accepting AMQP connection <0.1578.0> ([::1]:58529 -> [::1]:5672)
+2019-04-08 13:13:55.345 [info] <0.1578.0> connection <0.1578.0> ([::1]:58529 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:14:06.475 [info] <0.1598.0> accepting AMQP connection <0.1598.0> ([::1]:58534 -> [::1]:5672)
+2019-04-08 13:14:06.478 [info] <0.1598.0> connection <0.1598.0> ([::1]:58534 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:14:06.481 [error] <0.1569.0> Channel error on connection <0.1560.0> ([::1]:58526 -> [::1]:5672, vhost: '/', user: 'guest'), channel 1:
+operation basic.ack caused a channel exception precondition_failed: unknown delivery tag 1
+2019-04-08 13:15:52.514 [info] <0.1634.0> accepting AMQP connection <0.1634.0> ([::1]:58577 -> [::1]:5672)
+2019-04-08 13:15:52.517 [info] <0.1634.0> connection <0.1634.0> ([::1]:58577 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:16:23.117 [info] <0.1653.0> accepting AMQP connection <0.1653.0> ([::1]:58588 -> [::1]:5672)
+2019-04-08 13:16:23.121 [info] <0.1653.0> connection <0.1653.0> ([::1]:58588 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:16:50.910 [error] <0.1560.0> closing AMQP connection <0.1560.0> ([::1]:58526 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 13:16:52.403 [info] <0.1674.0> accepting AMQP connection <0.1674.0> ([::1]:58594 -> [::1]:5672)
+2019-04-08 13:16:52.406 [info] <0.1674.0> connection <0.1674.0> ([::1]:58594 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:16:55.348 [error] <0.1578.0> closing AMQP connection <0.1578.0> ([::1]:58529 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 13:16:56.860 [info] <0.1695.0> accepting AMQP connection <0.1695.0> ([::1]:58597 -> [::1]:5672)
+2019-04-08 13:16:56.863 [info] <0.1695.0> connection <0.1695.0> ([::1]:58597 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:17:06.481 [error] <0.1598.0> closing AMQP connection <0.1598.0> ([::1]:58534 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 13:18:00.693 [info] <0.1769.0> accepting AMQP connection <0.1769.0> ([::1]:58605 -> [::1]:5672)
+2019-04-08 13:18:00.696 [info] <0.1769.0> connection <0.1769.0> ([::1]:58605 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:18:06.085 [info] <0.1791.0> accepting AMQP connection <0.1791.0> ([::1]:58608 -> [::1]:5672)
+2019-04-08 13:18:06.088 [info] <0.1791.0> connection <0.1791.0> ([::1]:58608 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:18:41.542 [warning] <0.1838.0> Delete queue error: cannot obtain exclusive access to locked queue 'amq.gen-Lwzd_QhQajiPtyYJdNvbXQ' in vhost '/'. It could be originally declared on another connection or the exclusive property value does not match that of the original declaration.
+2019-04-08 13:18:52.520 [error] <0.1634.0> closing AMQP connection <0.1634.0> ([::1]:58577 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 13:19:23.123 [error] <0.1653.0> closing AMQP connection <0.1653.0> ([::1]:58588 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 13:21:53.583 [info] <0.8.0> Log file opened with Lager
+2019-04-08 13:21:54.623 [info] <0.285.0> 
+ Starting RabbitMQ 3.7.14 on Erlang 21.3
+ Copyright (C) 2007-2019 Pivotal Software, Inc.
+ Licensed under the MPL.  See https://www.rabbitmq.com/
+2019-04-08 13:21:54.623 [info] <0.285.0> 
+ node           : rabbit@8afbfc42
+ home dir       : /Users/jimmyjacobson
+ config file(s) : (none)
+ cookie hash    : ZQ9SkBGKy/8h3zW+av50Gw==
+ log(s)         : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log
+                : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42_upgrade.log
+ database dir   : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42
+2019-04-08 13:21:55.779 [info] <0.285.0> Running boot step pre_boot defined by app rabbit
+2019-04-08 13:21:55.779 [info] <0.285.0> Running boot step rabbit_core_metrics defined by app rabbit
+2019-04-08 13:21:55.779 [info] <0.285.0> Running boot step rabbit_alarm defined by app rabbit
+2019-04-08 13:21:55.799 [info] <0.293.0> Memory high watermark set to 6553 MiB (6871947673 bytes) of 16384 MiB (17179869184 bytes) total
+2019-04-08 13:21:55.821 [info] <0.295.0> Enabling free disk space monitoring
+2019-04-08 13:21:55.821 [info] <0.295.0> Disk free limit set to 50MB
+2019-04-08 13:21:55.828 [info] <0.285.0> Running boot step code_server_cache defined by app rabbit
+2019-04-08 13:21:55.828 [info] <0.285.0> Running boot step file_handle_cache defined by app rabbit
+2019-04-08 13:21:55.828 [info] <0.298.0> Limiting to approx 156 file handles (138 sockets)
+2019-04-08 13:21:55.828 [info] <0.299.0> FHC read buffering:  OFF
+2019-04-08 13:21:55.828 [info] <0.299.0> FHC write buffering: ON
+2019-04-08 13:21:55.829 [info] <0.285.0> Running boot step worker_pool defined by app rabbit
+2019-04-08 13:21:55.830 [info] <0.285.0> Running boot step database defined by app rabbit
+2019-04-08 13:21:55.830 [info] <0.285.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-08 13:21:55.891 [info] <0.285.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-08 13:21:55.892 [info] <0.285.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step database_sync defined by app rabbit
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step codec_correctness_check defined by app rabbit
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step external_infrastructure defined by app rabbit
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step rabbit_registry defined by app rabbit
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step rabbit_event defined by app rabbit
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2019-04-08 13:21:55.892 [info] <0.285.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2019-04-08 13:21:55.893 [info] <0.285.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2019-04-08 13:21:55.893 [info] <0.285.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2019-04-08 13:21:55.893 [info] <0.285.0> Running boot step rabbit_priority_queue defined by app rabbit
+2019-04-08 13:21:55.893 [info] <0.285.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2019-04-08 13:21:55.893 [info] <0.285.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2019-04-08 13:21:55.893 [info] <0.285.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2019-04-08 13:21:55.893 [info] <0.285.0> Running boot step kernel_ready defined by app rabbit
+2019-04-08 13:21:55.893 [info] <0.285.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2019-04-08 13:21:55.893 [info] <0.285.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2019-04-08 13:21:55.900 [info] <0.285.0> Running boot step guid_generator defined by app rabbit
+2019-04-08 13:21:55.916 [info] <0.285.0> Running boot step rabbit_node_monitor defined by app rabbit
+2019-04-08 13:21:55.916 [info] <0.329.0> Starting rabbit_node_monitor
+2019-04-08 13:21:55.916 [info] <0.285.0> Running boot step delegate_sup defined by app rabbit
+2019-04-08 13:21:55.917 [info] <0.285.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2019-04-08 13:21:55.917 [info] <0.285.0> Running boot step core_initialized defined by app rabbit
+2019-04-08 13:21:55.917 [info] <0.285.0> Running boot step upgrade_queues defined by app rabbit
+2019-04-08 13:21:55.938 [info] <0.285.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2019-04-08 13:21:55.938 [info] <0.285.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2019-04-08 13:21:55.938 [info] <0.285.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2019-04-08 13:21:55.939 [info] <0.285.0> Running boot step rabbit_policies defined by app rabbit
+2019-04-08 13:21:55.939 [info] <0.285.0> Running boot step rabbit_policy defined by app rabbit
+2019-04-08 13:21:55.939 [info] <0.285.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2019-04-08 13:21:55.939 [info] <0.285.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2019-04-08 13:21:55.939 [info] <0.285.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2019-04-08 13:21:55.940 [info] <0.285.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2019-04-08 13:21:55.940 [info] <0.285.0> Management plugin: using rates mode 'basic'
+2019-04-08 13:21:55.940 [info] <0.285.0> Running boot step recovery defined by app rabbit
+2019-04-08 13:21:55.940 [info] <0.360.0> Making sure data directory '/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2019-04-08 13:21:55.953 [info] <0.360.0> Starting message stores for vhost '/'
+2019-04-08 13:21:55.953 [info] <0.364.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2019-04-08 13:21:55.958 [info] <0.360.0> Started message store of type transient for vhost '/'
+2019-04-08 13:21:55.958 [info] <0.367.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2019-04-08 13:21:55.958 [warning] <0.367.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2019-04-08 13:21:55.959 [info] <0.360.0> Started message store of type persistent for vhost '/'
+2019-04-08 13:21:55.961 [info] <0.285.0> Running boot step load_definitions defined by app rabbitmq_management
+2019-04-08 13:21:55.961 [info] <0.285.0> Running boot step empty_db_check defined by app rabbit
+2019-04-08 13:21:55.961 [info] <0.285.0> Running boot step rabbit_looking_glass defined by app rabbit
+2019-04-08 13:21:55.961 [info] <0.285.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2019-04-08 13:21:55.961 [info] <0.285.0> Running boot step background_gc defined by app rabbit
+2019-04-08 13:21:55.961 [info] <0.285.0> Running boot step connection_tracking defined by app rabbit
+2019-04-08 13:21:55.961 [info] <0.285.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@8afbfc42
+2019-04-08 13:21:55.961 [info] <0.285.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@8afbfc42
+2019-04-08 13:21:55.962 [info] <0.285.0> Running boot step routing_ready defined by app rabbit
+2019-04-08 13:21:55.962 [info] <0.285.0> Running boot step pre_flight defined by app rabbit
+2019-04-08 13:21:55.962 [info] <0.285.0> Running boot step notify_cluster defined by app rabbit
+2019-04-08 13:21:55.962 [info] <0.285.0> Running boot step networking defined by app rabbit
+2019-04-08 13:21:55.964 [warning] <0.390.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+2019-04-08 13:21:55.965 [info] <0.404.0> started TCP listener on [::]:5672
+2019-04-08 13:21:55.965 [info] <0.285.0> Running boot step direct_client defined by app rabbit
+2019-04-08 13:21:56.054 [info] <0.454.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2019-04-08 13:21:56.055 [info] <0.560.0> Statistics database started.
+2019-04-08 13:21:56.055 [notice] <0.104.0> Changed loghwm of /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log to 50
+2019-04-08 13:21:56.134 [info] <0.8.0> Server startup complete; 3 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * rabbitmq_management_agent
+2019-04-08 13:22:18.068 [info] <0.632.0> accepting AMQP connection <0.632.0> ([::1]:58700 -> [::1]:5672)
+2019-04-08 13:22:18.070 [info] <0.632.0> connection <0.632.0> ([::1]:58700 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:22:20.884 [info] <0.656.0> accepting AMQP connection <0.656.0> ([::1]:58708 -> [::1]:5672)
+2019-04-08 13:22:20.887 [info] <0.656.0> connection <0.656.0> ([::1]:58708 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:25:18.073 [error] <0.632.0> closing AMQP connection <0.632.0> ([::1]:58700 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 13:25:20.890 [error] <0.656.0> closing AMQP connection <0.656.0> ([::1]:58708 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 13:59:10.008 [info] <0.2039.0> accepting AMQP connection <0.2039.0> ([::1]:59046 -> [::1]:5672)
+2019-04-08 13:59:10.011 [info] <0.2039.0> connection <0.2039.0> ([::1]:59046 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:59:31.112 [info] <0.2056.0> accepting AMQP connection <0.2056.0> ([::1]:59050 -> [::1]:5672)
+2019-04-08 13:59:31.115 [info] <0.2056.0> connection <0.2056.0> ([::1]:59050 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 13:59:47.097 [info] <0.2068.0> accepting AMQP connection <0.2068.0> ([::1]:59053 -> [::1]:5672)
+2019-04-08 13:59:47.101 [info] <0.2068.0> connection <0.2068.0> ([::1]:59053 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:00:05.410 [info] <0.2081.0> accepting AMQP connection <0.2081.0> ([::1]:59057 -> [::1]:5672)
+2019-04-08 14:00:05.413 [info] <0.2081.0> connection <0.2081.0> ([::1]:59057 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:01:25.348 [info] <0.2165.0> accepting AMQP connection <0.2165.0> ([::1]:59069 -> [::1]:5672)
+2019-04-08 14:01:25.351 [info] <0.2165.0> connection <0.2165.0> ([::1]:59069 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:01:28.694 [info] <0.2187.0> accepting AMQP connection <0.2187.0> ([::1]:59072 -> [::1]:5672)
+2019-04-08 14:01:28.697 [info] <0.2187.0> connection <0.2187.0> ([::1]:59072 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:02:31.117 [error] <0.2056.0> closing AMQP connection <0.2056.0> ([::1]:59050 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:02:47.103 [error] <0.2068.0> closing AMQP connection <0.2068.0> ([::1]:59053 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:03:05.415 [error] <0.2081.0> closing AMQP connection <0.2081.0> ([::1]:59057 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:03:10.014 [error] <0.2039.0> closing AMQP connection <0.2039.0> ([::1]:59046 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:04:25.354 [error] <0.2165.0> closing AMQP connection <0.2165.0> ([::1]:59069 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:04:28.699 [error] <0.2187.0> closing AMQP connection <0.2187.0> ([::1]:59072 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:07:04.757 [info] <0.2379.0> accepting AMQP connection <0.2379.0> ([::1]:59127 -> [::1]:5672)
+2019-04-08 14:07:04.760 [info] <0.2379.0> connection <0.2379.0> ([::1]:59127 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:07:08.800 [info] <0.2411.0> accepting AMQP connection <0.2411.0> ([::1]:59130 -> [::1]:5672)
+2019-04-08 14:07:08.803 [info] <0.2411.0> connection <0.2411.0> ([::1]:59130 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:10:08.805 [error] <0.2411.0> closing AMQP connection <0.2411.0> ([::1]:59130 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:14:33.155 [info] <0.2568.0> accepting AMQP connection <0.2568.0> ([::1]:59252 -> [::1]:5672)
+2019-04-08 14:14:33.158 [info] <0.2568.0> connection <0.2568.0> ([::1]:59252 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:14:49.434 [info] <0.2600.0> accepting AMQP connection <0.2600.0> ([::1]:59255 -> [::1]:5672)
+2019-04-08 14:14:49.437 [info] <0.2600.0> connection <0.2600.0> ([::1]:59255 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:17:04.769 [error] <0.2379.0> closing AMQP connection <0.2379.0> ([::1]:59127 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:18:33.162 [error] <0.2568.0> closing AMQP connection <0.2568.0> ([::1]:59252 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:18:49.441 [error] <0.2600.0> closing AMQP connection <0.2600.0> ([::1]:59255 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:19:11.120 [info] <0.8.0> Log file opened with Lager
+2019-04-08 14:19:12.117 [info] <0.279.0> 
+ Starting RabbitMQ 3.7.14 on Erlang 21.3
+ Copyright (C) 2007-2019 Pivotal Software, Inc.
+ Licensed under the MPL.  See https://www.rabbitmq.com/
+2019-04-08 14:19:12.118 [info] <0.279.0> 
+ node           : rabbit@8afbfc42
+ home dir       : /Users/jimmyjacobson
+ config file(s) : (none)
+ cookie hash    : ZQ9SkBGKy/8h3zW+av50Gw==
+ log(s)         : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log
+                : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42_upgrade.log
+ database dir   : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42
+2019-04-08 14:19:13.072 [info] <0.279.0> Running boot step pre_boot defined by app rabbit
+2019-04-08 14:19:13.072 [info] <0.279.0> Running boot step rabbit_core_metrics defined by app rabbit
+2019-04-08 14:19:13.072 [info] <0.279.0> Running boot step rabbit_alarm defined by app rabbit
+2019-04-08 14:19:13.088 [info] <0.287.0> Memory high watermark set to 6553 MiB (6871947673 bytes) of 16384 MiB (17179869184 bytes) total
+2019-04-08 14:19:13.112 [info] <0.289.0> Enabling free disk space monitoring
+2019-04-08 14:19:13.112 [info] <0.289.0> Disk free limit set to 50MB
+2019-04-08 14:19:13.119 [info] <0.279.0> Running boot step code_server_cache defined by app rabbit
+2019-04-08 14:19:13.119 [info] <0.279.0> Running boot step file_handle_cache defined by app rabbit
+2019-04-08 14:19:13.119 [info] <0.292.0> Limiting to approx 156 file handles (138 sockets)
+2019-04-08 14:19:13.119 [info] <0.293.0> FHC read buffering:  OFF
+2019-04-08 14:19:13.119 [info] <0.293.0> FHC write buffering: ON
+2019-04-08 14:19:13.119 [info] <0.279.0> Running boot step worker_pool defined by app rabbit
+2019-04-08 14:19:13.120 [info] <0.279.0> Running boot step database defined by app rabbit
+2019-04-08 14:19:13.121 [info] <0.279.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-08 14:19:13.199 [info] <0.279.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-08 14:19:13.199 [info] <0.279.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2019-04-08 14:19:13.199 [info] <0.279.0> Running boot step database_sync defined by app rabbit
+2019-04-08 14:19:13.199 [info] <0.279.0> Running boot step codec_correctness_check defined by app rabbit
+2019-04-08 14:19:13.199 [info] <0.279.0> Running boot step external_infrastructure defined by app rabbit
+2019-04-08 14:19:13.199 [info] <0.279.0> Running boot step rabbit_registry defined by app rabbit
+2019-04-08 14:19:13.199 [info] <0.279.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2019-04-08 14:19:13.199 [info] <0.279.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2019-04-08 14:19:13.199 [info] <0.279.0> Running boot step rabbit_event defined by app rabbit
+2019-04-08 14:19:13.199 [info] <0.279.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2019-04-08 14:19:13.199 [info] <0.279.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2019-04-08 14:19:13.199 [info] <0.279.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2019-04-08 14:19:13.199 [info] <0.279.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2019-04-08 14:19:13.199 [info] <0.279.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2019-04-08 14:19:13.200 [info] <0.279.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2019-04-08 14:19:13.200 [info] <0.279.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2019-04-08 14:19:13.200 [info] <0.279.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2019-04-08 14:19:13.200 [info] <0.279.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2019-04-08 14:19:13.200 [info] <0.279.0> Running boot step rabbit_priority_queue defined by app rabbit
+2019-04-08 14:19:13.200 [info] <0.279.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2019-04-08 14:19:13.200 [info] <0.279.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2019-04-08 14:19:13.200 [info] <0.279.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2019-04-08 14:19:13.200 [info] <0.279.0> Running boot step kernel_ready defined by app rabbit
+2019-04-08 14:19:13.200 [info] <0.279.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2019-04-08 14:19:13.200 [info] <0.279.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2019-04-08 14:19:13.208 [info] <0.279.0> Running boot step guid_generator defined by app rabbit
+2019-04-08 14:19:13.225 [info] <0.279.0> Running boot step rabbit_node_monitor defined by app rabbit
+2019-04-08 14:19:13.225 [info] <0.323.0> Starting rabbit_node_monitor
+2019-04-08 14:19:13.226 [info] <0.279.0> Running boot step delegate_sup defined by app rabbit
+2019-04-08 14:19:13.226 [info] <0.279.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2019-04-08 14:19:13.227 [info] <0.279.0> Running boot step core_initialized defined by app rabbit
+2019-04-08 14:19:13.227 [info] <0.279.0> Running boot step upgrade_queues defined by app rabbit
+2019-04-08 14:19:13.250 [info] <0.279.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2019-04-08 14:19:13.250 [info] <0.279.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2019-04-08 14:19:13.250 [info] <0.279.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2019-04-08 14:19:13.250 [info] <0.279.0> Running boot step rabbit_policies defined by app rabbit
+2019-04-08 14:19:13.251 [info] <0.279.0> Running boot step rabbit_policy defined by app rabbit
+2019-04-08 14:19:13.251 [info] <0.279.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2019-04-08 14:19:13.251 [info] <0.279.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2019-04-08 14:19:13.251 [info] <0.279.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2019-04-08 14:19:13.251 [info] <0.279.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2019-04-08 14:19:13.251 [info] <0.279.0> Management plugin: using rates mode 'basic'
+2019-04-08 14:19:13.251 [info] <0.279.0> Running boot step recovery defined by app rabbit
+2019-04-08 14:19:13.252 [info] <0.354.0> Making sure data directory '/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2019-04-08 14:19:13.264 [info] <0.354.0> Starting message stores for vhost '/'
+2019-04-08 14:19:13.264 [info] <0.358.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2019-04-08 14:19:13.270 [info] <0.354.0> Started message store of type transient for vhost '/'
+2019-04-08 14:19:13.270 [info] <0.361.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2019-04-08 14:19:13.270 [warning] <0.361.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2019-04-08 14:19:13.271 [info] <0.354.0> Started message store of type persistent for vhost '/'
+2019-04-08 14:19:13.273 [info] <0.279.0> Running boot step load_definitions defined by app rabbitmq_management
+2019-04-08 14:19:13.273 [info] <0.279.0> Running boot step empty_db_check defined by app rabbit
+2019-04-08 14:19:13.273 [info] <0.279.0> Running boot step rabbit_looking_glass defined by app rabbit
+2019-04-08 14:19:13.273 [info] <0.279.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2019-04-08 14:19:13.273 [info] <0.279.0> Running boot step background_gc defined by app rabbit
+2019-04-08 14:19:13.273 [info] <0.279.0> Running boot step connection_tracking defined by app rabbit
+2019-04-08 14:19:13.274 [info] <0.279.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@8afbfc42
+2019-04-08 14:19:13.274 [info] <0.279.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@8afbfc42
+2019-04-08 14:19:13.274 [info] <0.279.0> Running boot step routing_ready defined by app rabbit
+2019-04-08 14:19:13.274 [info] <0.279.0> Running boot step pre_flight defined by app rabbit
+2019-04-08 14:19:13.274 [info] <0.279.0> Running boot step notify_cluster defined by app rabbit
+2019-04-08 14:19:13.274 [info] <0.279.0> Running boot step networking defined by app rabbit
+2019-04-08 14:19:13.277 [warning] <0.384.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+2019-04-08 14:19:13.277 [info] <0.398.0> started TCP listener on [::]:5672
+2019-04-08 14:19:13.278 [info] <0.279.0> Running boot step direct_client defined by app rabbit
+2019-04-08 14:19:13.366 [info] <0.448.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2019-04-08 14:19:13.367 [info] <0.554.0> Statistics database started.
+2019-04-08 14:19:13.367 [notice] <0.104.0> Changed loghwm of /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log to 50
+2019-04-08 14:19:13.440 [info] <0.8.0> Server startup complete; 3 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * rabbitmq_management_agent
+2019-04-08 14:21:19.850 [info] <0.625.0> accepting AMQP connection <0.625.0> ([::1]:59322 -> [::1]:5672)
+2019-04-08 14:21:19.853 [info] <0.625.0> connection <0.625.0> ([::1]:59322 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:23:17.997 [info] <0.727.0> accepting AMQP connection <0.727.0> ([::1]:59347 -> [::1]:5672)
+2019-04-08 14:23:17.999 [info] <0.727.0> connection <0.727.0> ([::1]:59347 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:23:25.427 [info] <0.761.0> accepting AMQP connection <0.761.0> ([::1]:59350 -> [::1]:5672)
+2019-04-08 14:23:25.430 [info] <0.761.0> connection <0.761.0> ([::1]:59350 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:24:19.857 [error] <0.625.0> closing AMQP connection <0.625.0> ([::1]:59322 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:27:13.029 [info] <0.906.0> accepting AMQP connection <0.906.0> ([::1]:59390 -> [::1]:5672)
+2019-04-08 14:27:13.032 [info] <0.906.0> connection <0.906.0> ([::1]:59390 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:27:18.004 [error] <0.727.0> closing AMQP connection <0.727.0> ([::1]:59347 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:27:25.433 [error] <0.761.0> closing AMQP connection <0.761.0> ([::1]:59350 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:27:37.720 [info] <0.938.0> accepting AMQP connection <0.938.0> ([::1]:59396 -> [::1]:5672)
+2019-04-08 14:27:37.724 [info] <0.938.0> connection <0.938.0> ([::1]:59396 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:27:39.862 [info] <0.950.0> accepting AMQP connection <0.950.0> ([::1]:59399 -> [::1]:5672)
+2019-04-08 14:27:39.865 [info] <0.950.0> connection <0.950.0> ([::1]:59399 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:27:45.830 [info] <0.964.0> accepting AMQP connection <0.964.0> ([::1]:59403 -> [::1]:5672)
+2019-04-08 14:27:45.833 [info] <0.964.0> connection <0.964.0> ([::1]:59403 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:28:15.640 [info] <0.995.0> accepting AMQP connection <0.995.0> ([::1]:59406 -> [::1]:5672)
+2019-04-08 14:28:15.643 [info] <0.995.0> connection <0.995.0> ([::1]:59406 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:28:19.645 [info] <0.1029.0> accepting AMQP connection <0.1029.0> ([::1]:59412 -> [::1]:5672)
+2019-04-08 14:28:19.648 [info] <0.1029.0> connection <0.1029.0> ([::1]:59412 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:30:13.034 [error] <0.906.0> closing AMQP connection <0.906.0> ([::1]:59390 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:30:26.291 [info] <0.1096.0> accepting AMQP connection <0.1096.0> ([::1]:59428 -> [::1]:5672)
+2019-04-08 14:30:26.294 [info] <0.1096.0> connection <0.1096.0> ([::1]:59428 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:30:37.726 [error] <0.938.0> closing AMQP connection <0.938.0> ([::1]:59396 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:30:39.867 [error] <0.950.0> closing AMQP connection <0.950.0> ([::1]:59399 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:30:45.835 [error] <0.964.0> closing AMQP connection <0.964.0> ([::1]:59403 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:31:06.729 [info] <0.1133.0> accepting AMQP connection <0.1133.0> ([::1]:59572 -> [::1]:5672)
+2019-04-08 14:31:06.731 [info] <0.1133.0> connection <0.1133.0> ([::1]:59572 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:31:15.647 [error] <0.995.0> closing AMQP connection <0.995.0> ([::1]:59406 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:31:19.651 [error] <0.1029.0> closing AMQP connection <0.1029.0> ([::1]:59412 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:32:24.800 [info] <0.1211.0> accepting AMQP connection <0.1211.0> ([::1]:59589 -> [::1]:5672)
+2019-04-08 14:32:24.802 [info] <0.1211.0> connection <0.1211.0> ([::1]:59589 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:32:42.855 [info] <0.1251.0> accepting AMQP connection <0.1251.0> ([::1]:59594 -> [::1]:5672)
+2019-04-08 14:32:42.857 [info] <0.1251.0> connection <0.1251.0> ([::1]:59594 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:32:59.450 [info] <0.1289.0> accepting AMQP connection <0.1289.0> ([::1]:59598 -> [::1]:5672)
+2019-04-08 14:32:59.453 [info] <0.1289.0> connection <0.1289.0> ([::1]:59598 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:33:26.296 [error] <0.1096.0> closing AMQP connection <0.1096.0> ([::1]:59428 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:33:31.953 [info] <0.8.0> Log file opened with Lager
+2019-04-08 14:33:32.888 [info] <0.285.0> 
+ Starting RabbitMQ 3.7.14 on Erlang 21.3
+ Copyright (C) 2007-2019 Pivotal Software, Inc.
+ Licensed under the MPL.  See https://www.rabbitmq.com/
+2019-04-08 14:33:32.889 [info] <0.285.0> 
+ node           : rabbit@8afbfc42
+ home dir       : /Users/jimmyjacobson
+ config file(s) : (none)
+ cookie hash    : ZQ9SkBGKy/8h3zW+av50Gw==
+ log(s)         : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log
+                : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42_upgrade.log
+ database dir   : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42
+2019-04-08 14:33:33.927 [info] <0.285.0> Running boot step pre_boot defined by app rabbit
+2019-04-08 14:33:33.927 [info] <0.285.0> Running boot step rabbit_core_metrics defined by app rabbit
+2019-04-08 14:33:33.928 [info] <0.285.0> Running boot step rabbit_alarm defined by app rabbit
+2019-04-08 14:33:33.945 [info] <0.293.0> Memory high watermark set to 6553 MiB (6871947673 bytes) of 16384 MiB (17179869184 bytes) total
+2019-04-08 14:33:33.968 [info] <0.295.0> Enabling free disk space monitoring
+2019-04-08 14:33:33.968 [info] <0.295.0> Disk free limit set to 50MB
+2019-04-08 14:33:33.975 [info] <0.285.0> Running boot step code_server_cache defined by app rabbit
+2019-04-08 14:33:33.975 [info] <0.285.0> Running boot step file_handle_cache defined by app rabbit
+2019-04-08 14:33:33.975 [info] <0.298.0> Limiting to approx 156 file handles (138 sockets)
+2019-04-08 14:33:33.975 [info] <0.299.0> FHC read buffering:  OFF
+2019-04-08 14:33:33.975 [info] <0.299.0> FHC write buffering: ON
+2019-04-08 14:33:33.975 [info] <0.285.0> Running boot step worker_pool defined by app rabbit
+2019-04-08 14:33:33.976 [info] <0.285.0> Running boot step database defined by app rabbit
+2019-04-08 14:33:33.976 [info] <0.285.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-08 14:33:34.043 [info] <0.285.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-08 14:33:34.043 [info] <0.285.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2019-04-08 14:33:34.043 [info] <0.285.0> Running boot step database_sync defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step codec_correctness_check defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step external_infrastructure defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_registry defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_event defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Running boot step rabbit_priority_queue defined by app rabbit
+2019-04-08 14:33:34.044 [info] <0.285.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2019-04-08 14:33:34.045 [info] <0.285.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2019-04-08 14:33:34.045 [info] <0.285.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2019-04-08 14:33:34.045 [info] <0.285.0> Running boot step kernel_ready defined by app rabbit
+2019-04-08 14:33:34.045 [info] <0.285.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2019-04-08 14:33:34.045 [info] <0.285.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2019-04-08 14:33:34.052 [info] <0.285.0> Running boot step guid_generator defined by app rabbit
+2019-04-08 14:33:34.065 [info] <0.285.0> Running boot step rabbit_node_monitor defined by app rabbit
+2019-04-08 14:33:34.065 [info] <0.329.0> Starting rabbit_node_monitor
+2019-04-08 14:33:34.065 [info] <0.285.0> Running boot step delegate_sup defined by app rabbit
+2019-04-08 14:33:34.066 [info] <0.285.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2019-04-08 14:33:34.066 [info] <0.285.0> Running boot step core_initialized defined by app rabbit
+2019-04-08 14:33:34.066 [info] <0.285.0> Running boot step upgrade_queues defined by app rabbit
+2019-04-08 14:33:34.089 [info] <0.285.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2019-04-08 14:33:34.089 [info] <0.285.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2019-04-08 14:33:34.089 [info] <0.285.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2019-04-08 14:33:34.089 [info] <0.285.0> Running boot step rabbit_policies defined by app rabbit
+2019-04-08 14:33:34.090 [info] <0.285.0> Running boot step rabbit_policy defined by app rabbit
+2019-04-08 14:33:34.090 [info] <0.285.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2019-04-08 14:33:34.090 [info] <0.285.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2019-04-08 14:33:34.090 [info] <0.285.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2019-04-08 14:33:34.090 [info] <0.285.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2019-04-08 14:33:34.090 [info] <0.285.0> Management plugin: using rates mode 'basic'
+2019-04-08 14:33:34.090 [info] <0.285.0> Running boot step recovery defined by app rabbit
+2019-04-08 14:33:34.091 [info] <0.360.0> Making sure data directory '/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2019-04-08 14:33:34.101 [info] <0.360.0> Starting message stores for vhost '/'
+2019-04-08 14:33:34.102 [info] <0.364.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2019-04-08 14:33:34.107 [info] <0.360.0> Started message store of type transient for vhost '/'
+2019-04-08 14:33:34.107 [info] <0.367.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2019-04-08 14:33:34.108 [warning] <0.367.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2019-04-08 14:33:34.108 [info] <0.360.0> Started message store of type persistent for vhost '/'
+2019-04-08 14:33:34.110 [info] <0.285.0> Running boot step load_definitions defined by app rabbitmq_management
+2019-04-08 14:33:34.110 [info] <0.285.0> Running boot step empty_db_check defined by app rabbit
+2019-04-08 14:33:34.110 [info] <0.285.0> Running boot step rabbit_looking_glass defined by app rabbit
+2019-04-08 14:33:34.110 [info] <0.285.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2019-04-08 14:33:34.110 [info] <0.285.0> Running boot step background_gc defined by app rabbit
+2019-04-08 14:33:34.110 [info] <0.285.0> Running boot step connection_tracking defined by app rabbit
+2019-04-08 14:33:34.110 [info] <0.285.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@8afbfc42
+2019-04-08 14:33:34.110 [info] <0.285.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@8afbfc42
+2019-04-08 14:33:34.111 [info] <0.285.0> Running boot step routing_ready defined by app rabbit
+2019-04-08 14:33:34.111 [info] <0.285.0> Running boot step pre_flight defined by app rabbit
+2019-04-08 14:33:34.111 [info] <0.285.0> Running boot step notify_cluster defined by app rabbit
+2019-04-08 14:33:34.111 [info] <0.285.0> Running boot step networking defined by app rabbit
+2019-04-08 14:33:34.113 [warning] <0.390.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+2019-04-08 14:33:34.113 [info] <0.404.0> started TCP listener on [::]:5672
+2019-04-08 14:33:34.114 [info] <0.285.0> Running boot step direct_client defined by app rabbit
+2019-04-08 14:33:34.204 [info] <0.454.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2019-04-08 14:33:34.204 [info] <0.560.0> Statistics database started.
+2019-04-08 14:33:34.204 [notice] <0.104.0> Changed loghwm of /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log to 50
+2019-04-08 14:33:34.281 [info] <0.8.0> Server startup complete; 3 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * rabbitmq_management_agent
+2019-04-08 14:33:41.727 [info] <0.575.0> accepting AMQP connection <0.575.0> ([::1]:59618 -> [::1]:5672)
+2019-04-08 14:33:41.730 [info] <0.575.0> connection <0.575.0> ([::1]:59618 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:34:19.847 [info] <0.624.0> accepting AMQP connection <0.624.0> ([::1]:59628 -> [::1]:5672)
+2019-04-08 14:34:19.849 [info] <0.624.0> connection <0.624.0> ([::1]:59628 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:36:11.104 [info] <0.702.0> accepting AMQP connection <0.702.0> ([::1]:59644 -> [::1]:5672)
+2019-04-08 14:36:11.107 [info] <0.702.0> connection <0.702.0> ([::1]:59644 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:36:41.732 [error] <0.575.0> closing AMQP connection <0.575.0> ([::1]:59618 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:37:19.852 [error] <0.624.0> closing AMQP connection <0.624.0> ([::1]:59628 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:38:37.493 [info] <0.812.0> accepting AMQP connection <0.812.0> ([::1]:59671 -> [::1]:5672)
+2019-04-08 14:38:37.496 [info] <0.812.0> connection <0.812.0> ([::1]:59671 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:38:41.635 [info] <0.849.0> accepting AMQP connection <0.849.0> ([::1]:59674 -> [::1]:5672)
+2019-04-08 14:38:41.637 [info] <0.849.0> connection <0.849.0> ([::1]:59674 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:38:54.194 [info] <0.8.0> Log file opened with Lager
+2019-04-08 14:38:55.096 [info] <0.285.0> 
+ Starting RabbitMQ 3.7.14 on Erlang 21.3
+ Copyright (C) 2007-2019 Pivotal Software, Inc.
+ Licensed under the MPL.  See https://www.rabbitmq.com/
+2019-04-08 14:38:55.097 [info] <0.285.0> 
+ node           : rabbit@8afbfc42
+ home dir       : /Users/jimmyjacobson
+ config file(s) : (none)
+ cookie hash    : ZQ9SkBGKy/8h3zW+av50Gw==
+ log(s)         : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log
+                : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42_upgrade.log
+ database dir   : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42
+2019-04-08 14:38:56.113 [info] <0.285.0> Running boot step pre_boot defined by app rabbit
+2019-04-08 14:38:56.113 [info] <0.285.0> Running boot step rabbit_core_metrics defined by app rabbit
+2019-04-08 14:38:56.114 [info] <0.285.0> Running boot step rabbit_alarm defined by app rabbit
+2019-04-08 14:38:56.132 [info] <0.293.0> Memory high watermark set to 6553 MiB (6871947673 bytes) of 16384 MiB (17179869184 bytes) total
+2019-04-08 14:38:56.154 [info] <0.295.0> Enabling free disk space monitoring
+2019-04-08 14:38:56.154 [info] <0.295.0> Disk free limit set to 50MB
+2019-04-08 14:38:56.161 [info] <0.285.0> Running boot step code_server_cache defined by app rabbit
+2019-04-08 14:38:56.161 [info] <0.285.0> Running boot step file_handle_cache defined by app rabbit
+2019-04-08 14:38:56.161 [info] <0.298.0> Limiting to approx 156 file handles (138 sockets)
+2019-04-08 14:38:56.161 [info] <0.299.0> FHC read buffering:  OFF
+2019-04-08 14:38:56.161 [info] <0.299.0> FHC write buffering: ON
+2019-04-08 14:38:56.162 [info] <0.285.0> Running boot step worker_pool defined by app rabbit
+2019-04-08 14:38:56.162 [info] <0.285.0> Running boot step database defined by app rabbit
+2019-04-08 14:38:56.163 [info] <0.285.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-08 14:38:56.237 [info] <0.285.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-08 14:38:56.237 [info] <0.285.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2019-04-08 14:38:56.237 [info] <0.285.0> Running boot step database_sync defined by app rabbit
+2019-04-08 14:38:56.237 [info] <0.285.0> Running boot step codec_correctness_check defined by app rabbit
+2019-04-08 14:38:56.237 [info] <0.285.0> Running boot step external_infrastructure defined by app rabbit
+2019-04-08 14:38:56.237 [info] <0.285.0> Running boot step rabbit_registry defined by app rabbit
+2019-04-08 14:38:56.237 [info] <0.285.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2019-04-08 14:38:56.238 [info] <0.285.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2019-04-08 14:38:56.238 [info] <0.285.0> Running boot step rabbit_event defined by app rabbit
+2019-04-08 14:38:56.238 [info] <0.285.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2019-04-08 14:38:56.238 [info] <0.285.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2019-04-08 14:38:56.238 [info] <0.285.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2019-04-08 14:38:56.238 [info] <0.285.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2019-04-08 14:38:56.238 [info] <0.285.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2019-04-08 14:38:56.238 [info] <0.285.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2019-04-08 14:38:56.238 [info] <0.285.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2019-04-08 14:38:56.238 [info] <0.285.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2019-04-08 14:38:56.239 [info] <0.285.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2019-04-08 14:38:56.239 [info] <0.285.0> Running boot step rabbit_priority_queue defined by app rabbit
+2019-04-08 14:38:56.239 [info] <0.285.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2019-04-08 14:38:56.239 [info] <0.285.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2019-04-08 14:38:56.239 [info] <0.285.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2019-04-08 14:38:56.239 [info] <0.285.0> Running boot step kernel_ready defined by app rabbit
+2019-04-08 14:38:56.239 [info] <0.285.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2019-04-08 14:38:56.239 [info] <0.285.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2019-04-08 14:38:56.246 [info] <0.285.0> Running boot step guid_generator defined by app rabbit
+2019-04-08 14:38:56.259 [info] <0.285.0> Running boot step rabbit_node_monitor defined by app rabbit
+2019-04-08 14:38:56.259 [info] <0.329.0> Starting rabbit_node_monitor
+2019-04-08 14:38:56.259 [info] <0.285.0> Running boot step delegate_sup defined by app rabbit
+2019-04-08 14:38:56.260 [info] <0.285.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2019-04-08 14:38:56.260 [info] <0.285.0> Running boot step core_initialized defined by app rabbit
+2019-04-08 14:38:56.260 [info] <0.285.0> Running boot step upgrade_queues defined by app rabbit
+2019-04-08 14:38:56.283 [info] <0.285.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2019-04-08 14:38:56.283 [info] <0.285.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2019-04-08 14:38:56.283 [info] <0.285.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2019-04-08 14:38:56.283 [info] <0.285.0> Running boot step rabbit_policies defined by app rabbit
+2019-04-08 14:38:56.284 [info] <0.285.0> Running boot step rabbit_policy defined by app rabbit
+2019-04-08 14:38:56.284 [info] <0.285.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2019-04-08 14:38:56.284 [info] <0.285.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2019-04-08 14:38:56.284 [info] <0.285.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2019-04-08 14:38:56.284 [info] <0.285.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2019-04-08 14:38:56.284 [info] <0.285.0> Management plugin: using rates mode 'basic'
+2019-04-08 14:38:56.284 [info] <0.285.0> Running boot step recovery defined by app rabbit
+2019-04-08 14:38:56.285 [info] <0.360.0> Making sure data directory '/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbfc42/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2019-04-08 14:38:56.296 [info] <0.360.0> Starting message stores for vhost '/'
+2019-04-08 14:38:56.297 [info] <0.364.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2019-04-08 14:38:56.305 [info] <0.360.0> Started message store of type transient for vhost '/'
+2019-04-08 14:38:56.305 [info] <0.367.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2019-04-08 14:38:56.306 [warning] <0.367.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2019-04-08 14:38:56.307 [info] <0.360.0> Started message store of type persistent for vhost '/'
+2019-04-08 14:38:56.309 [info] <0.285.0> Running boot step load_definitions defined by app rabbitmq_management
+2019-04-08 14:38:56.309 [info] <0.285.0> Running boot step empty_db_check defined by app rabbit
+2019-04-08 14:38:56.309 [info] <0.285.0> Running boot step rabbit_looking_glass defined by app rabbit
+2019-04-08 14:38:56.309 [info] <0.285.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2019-04-08 14:38:56.309 [info] <0.285.0> Running boot step background_gc defined by app rabbit
+2019-04-08 14:38:56.309 [info] <0.285.0> Running boot step connection_tracking defined by app rabbit
+2019-04-08 14:38:56.309 [info] <0.285.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@8afbfc42
+2019-04-08 14:38:56.309 [info] <0.285.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@8afbfc42
+2019-04-08 14:38:56.309 [info] <0.285.0> Running boot step routing_ready defined by app rabbit
+2019-04-08 14:38:56.310 [info] <0.285.0> Running boot step pre_flight defined by app rabbit
+2019-04-08 14:38:56.310 [info] <0.285.0> Running boot step notify_cluster defined by app rabbit
+2019-04-08 14:38:56.310 [info] <0.285.0> Running boot step networking defined by app rabbit
+2019-04-08 14:38:56.312 [warning] <0.390.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+2019-04-08 14:38:56.312 [info] <0.404.0> started TCP listener on [::]:5672
+2019-04-08 14:38:56.313 [info] <0.285.0> Running boot step direct_client defined by app rabbit
+2019-04-08 14:38:56.402 [info] <0.454.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2019-04-08 14:38:56.402 [info] <0.560.0> Statistics database started.
+2019-04-08 14:38:56.402 [notice] <0.104.0> Changed loghwm of /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbfc42.log to 50
+2019-04-08 14:38:56.480 [info] <0.8.0> Server startup complete; 3 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * rabbitmq_management_agent
+2019-04-08 14:39:11.011 [info] <0.579.0> accepting AMQP connection <0.579.0> ([::1]:59697 -> [::1]:5672)
+2019-04-08 14:39:11.013 [info] <0.579.0> connection <0.579.0> ([::1]:59697 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:39:20.182 [info] <0.621.0> accepting AMQP connection <0.621.0> ([::1]:59700 -> [::1]:5672)
+2019-04-08 14:39:20.184 [info] <0.621.0> connection <0.621.0> ([::1]:59700 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-08 14:43:20.188 [error] <0.621.0> closing AMQP connection <0.621.0> ([::1]:59700 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-08 14:44:11.018 [error] <0.579.0> closing AMQP connection <0.579.0> ([::1]:59697 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 10:23:05.996 [info] <0.2726.0> accepting AMQP connection <0.2726.0> ([::1]:50712 -> [::1]:5672)
+2019-04-09 10:23:05.999 [info] <0.2726.0> connection <0.2726.0> ([::1]:50712 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 10:23:09.375 [info] <0.2763.0> accepting AMQP connection <0.2763.0> ([::1]:50715 -> [::1]:5672)
+2019-04-09 10:23:09.377 [info] <0.2763.0> connection <0.2763.0> ([::1]:50715 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 10:23:29.196 [info] <0.2775.0> accepting AMQP connection <0.2775.0> ([::1]:50719 -> [::1]:5672)
+2019-04-09 10:23:29.198 [info] <0.2775.0> connection <0.2775.0> ([::1]:50719 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 10:24:24.559 [info] <0.2787.0> accepting AMQP connection <0.2787.0> ([::1]:50724 -> [::1]:5672)
+2019-04-09 10:24:24.561 [info] <0.2787.0> connection <0.2787.0> ([::1]:50724 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 10:24:55.287 [info] <0.2800.0> accepting AMQP connection <0.2800.0> ([::1]:50727 -> [::1]:5672)
+2019-04-09 10:24:55.290 [info] <0.2800.0> connection <0.2800.0> ([::1]:50727 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 10:26:09.380 [error] <0.2763.0> closing AMQP connection <0.2763.0> ([::1]:50715 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 10:26:29.201 [error] <0.2775.0> closing AMQP connection <0.2775.0> ([::1]:50719 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 10:27:24.564 [error] <0.2787.0> closing AMQP connection <0.2787.0> ([::1]:50724 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 10:27:55.292 [error] <0.2800.0> closing AMQP connection <0.2800.0> ([::1]:50727 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 10:28:06.003 [error] <0.2726.0> closing AMQP connection <0.2726.0> ([::1]:50712 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 10:53:38.199 [info] <0.3029.0> accepting AMQP connection <0.3029.0> ([::1]:51003 -> [::1]:5672)
+2019-04-09 10:53:38.201 [info] <0.3029.0> connection <0.3029.0> ([::1]:51003 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 10:56:38.204 [error] <0.3029.0> closing AMQP connection <0.3029.0> ([::1]:51003 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 11:05:46.689 [info] <0.3114.0> accepting AMQP connection <0.3114.0> ([::1]:51230 -> [::1]:5672)
+2019-04-09 11:05:46.692 [info] <0.3114.0> connection <0.3114.0> ([::1]:51230 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 11:08:46.694 [error] <0.3114.0> closing AMQP connection <0.3114.0> ([::1]:51230 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 11:17:19.084 [info] <0.3193.0> accepting AMQP connection <0.3193.0> ([::1]:51482 -> [::1]:5672)
+2019-04-09 11:17:19.087 [info] <0.3193.0> connection <0.3193.0> ([::1]:51482 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 11:20:19.089 [error] <0.3193.0> closing AMQP connection <0.3193.0> ([::1]:51482 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 11:26:04.193 [info] <0.3269.0> accepting AMQP connection <0.3269.0> ([::1]:51647 -> [::1]:5672)
+2019-04-09 11:26:04.196 [info] <0.3269.0> connection <0.3269.0> ([::1]:51647 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 11:26:07.933 [warning] <0.3269.0> closing AMQP connection <0.3269.0> ([::1]:51647 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-09 11:34:11.526 [info] <0.3308.0> accepting AMQP connection <0.3308.0> ([::1]:51708 -> [::1]:5672)
+2019-04-09 11:34:11.528 [info] <0.3308.0> connection <0.3308.0> ([::1]:51708 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 11:34:31.324 [warning] <0.3308.0> closing AMQP connection <0.3308.0> ([::1]:51708 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-09 11:34:44.342 [info] <0.3325.0> accepting AMQP connection <0.3325.0> ([::1]:52129 -> [::1]:5672)
+2019-04-09 11:34:44.345 [info] <0.3325.0> connection <0.3325.0> ([::1]:52129 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 11:35:37.685 [info] <0.3337.0> accepting AMQP connection <0.3337.0> ([::1]:52561 -> [::1]:5672)
+2019-04-09 11:35:37.688 [info] <0.3337.0> connection <0.3337.0> ([::1]:52561 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 11:36:58.141 [info] <0.3422.0> accepting AMQP connection <0.3422.0> ([::1]:53101 -> [::1]:5672)
+2019-04-09 11:36:58.143 [info] <0.3422.0> connection <0.3422.0> ([::1]:53101 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 11:37:19.436 [warning] <0.3337.0> closing AMQP connection <0.3337.0> ([::1]:52561 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-09 11:37:19.436 [warning] <0.3422.0> closing AMQP connection <0.3422.0> ([::1]:53101 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-09 11:37:44.347 [error] <0.3325.0> closing AMQP connection <0.3325.0> ([::1]:52129 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 11:38:06.782 [info] <0.3514.0> accepting AMQP connection <0.3514.0> ([::1]:53689 -> [::1]:5672)
+2019-04-09 11:38:06.786 [info] <0.3514.0> connection <0.3514.0> ([::1]:53689 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 11:41:06.788 [error] <0.3514.0> closing AMQP connection <0.3514.0> ([::1]:53689 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 11:45:21.575 [info] <0.3845.0> accepting AMQP connection <0.3845.0> ([::1]:56517 -> [::1]:5672)
+2019-04-09 11:45:21.577 [info] <0.3845.0> connection <0.3845.0> ([::1]:56517 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 11:45:34.864 [info] <0.3888.0> accepting AMQP connection <0.3888.0> ([::1]:56608 -> [::1]:5672)
+2019-04-09 11:45:34.866 [info] <0.3888.0> connection <0.3888.0> ([::1]:56608 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 12:42:43.003 [error] <0.3888.0> closing AMQP connection <0.3888.0> ([::1]:56608 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 12:42:43.003 [error] <0.3845.0> closing AMQP connection <0.3845.0> ([::1]:56517 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 16:04:26.799 [info] <0.3982.0> accepting AMQP connection <0.3982.0> ([::1]:57797 -> [::1]:5672)
+2019-04-09 16:04:26.811 [info] <0.3982.0> connection <0.3982.0> ([::1]:57797 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 17:10:58.390 [info] <0.4313.0> accepting AMQP connection <0.4313.0> ([::1]:63642 -> [::1]:5672)
+2019-04-09 17:10:58.393 [info] <0.4313.0> connection <0.4313.0> ([::1]:63642 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 17:11:14.959 [warning] <0.4313.0> closing AMQP connection <0.4313.0> ([::1]:63642 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-09 17:11:14.959 [warning] <0.3982.0> closing AMQP connection <0.3982.0> ([::1]:57797 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-09 17:11:46.385 [info] <0.4375.0> accepting AMQP connection <0.4375.0> ([::1]:64424 -> [::1]:5672)
+2019-04-09 17:11:46.388 [info] <0.4375.0> connection <0.4375.0> ([::1]:64424 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 17:12:16.054 [info] <0.4415.0> accepting AMQP connection <0.4415.0> ([::1]:64647 -> [::1]:5672)
+2019-04-09 17:12:16.059 [info] <0.4415.0> connection <0.4415.0> ([::1]:64647 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 17:14:46.390 [error] <0.4375.0> closing AMQP connection <0.4375.0> ([::1]:64424 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 17:15:16.061 [error] <0.4415.0> closing AMQP connection <0.4415.0> ([::1]:64647 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-09 17:17:31.172 [info] <0.4506.0> accepting AMQP connection <0.4506.0> ([::1]:50416 -> [::1]:5672)
+2019-04-09 17:17:31.176 [info] <0.4506.0> connection <0.4506.0> ([::1]:50416 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-09 17:20:31.178 [error] <0.4506.0> closing AMQP connection <0.4506.0> ([::1]:50416 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 19:30:53.710 [info] <0.5366.0> accepting AMQP connection <0.5366.0> ([::1]:63021 -> [::1]:5672)
+2019-04-10 19:30:53.736 [info] <0.5366.0> connection <0.5366.0> ([::1]:63021 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:30:58.475 [info] <0.5405.0> accepting AMQP connection <0.5405.0> ([::1]:63056 -> [::1]:5672)
+2019-04-10 19:30:58.478 [info] <0.5405.0> connection <0.5405.0> ([::1]:63056 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:33:52.375 [error] <0.5366.0> closing AMQP connection <0.5366.0> ([::1]:63021 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 19:33:57.165 [error] <0.5405.0> closing AMQP connection <0.5405.0> ([::1]:63056 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 19:34:09.385 [info] <0.5437.0> accepting AMQP connection <0.5437.0> ([::1]:64395 -> [::1]:5672)
+2019-04-10 19:34:09.388 [info] <0.5437.0> connection <0.5437.0> ([::1]:64395 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:34:11.989 [info] <0.5449.0> accepting AMQP connection <0.5449.0> ([::1]:64421 -> [::1]:5672)
+2019-04-10 19:34:11.992 [info] <0.5449.0> connection <0.5449.0> ([::1]:64421 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:37:09.390 [error] <0.5437.0> closing AMQP connection <0.5437.0> ([::1]:64395 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 19:37:11.995 [error] <0.5449.0> closing AMQP connection <0.5449.0> ([::1]:64421 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 19:38:41.715 [info] <0.5514.0> accepting AMQP connection <0.5514.0> ([::1]:49833 -> [::1]:5672)
+2019-04-10 19:38:41.718 [info] <0.5514.0> connection <0.5514.0> ([::1]:49833 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:38:57.267 [info] <0.5535.0> accepting AMQP connection <0.5535.0> ([::1]:49938 -> [::1]:5672)
+2019-04-10 19:38:57.270 [info] <0.5535.0> connection <0.5535.0> ([::1]:49938 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:39:06.610 [warning] <0.5514.0> closing AMQP connection <0.5514.0> ([::1]:49833 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-10 19:39:27.023 [info] <0.5550.0> accepting AMQP connection <0.5550.0> ([::1]:50447 -> [::1]:5672)
+2019-04-10 19:39:27.025 [info] <0.5550.0> connection <0.5550.0> ([::1]:50447 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:39:43.446 [info] <0.5562.0> accepting AMQP connection <0.5562.0> ([::1]:50666 -> [::1]:5672)
+2019-04-10 19:39:43.448 [info] <0.5562.0> connection <0.5562.0> ([::1]:50666 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:39:52.364 [warning] <0.5562.0> closing AMQP connection <0.5562.0> ([::1]:50666 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-10 19:39:52.364 [warning] <0.5550.0> closing AMQP connection <0.5550.0> ([::1]:50447 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-10 19:40:27.375 [info] <0.5583.0> accepting AMQP connection <0.5583.0> ([::1]:51445 -> [::1]:5672)
+2019-04-10 19:40:27.378 [info] <0.5583.0> connection <0.5583.0> ([::1]:51445 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:40:39.462 [info] <0.5620.0> accepting AMQP connection <0.5620.0> ([::1]:51612 -> [::1]:5672)
+2019-04-10 19:40:39.465 [info] <0.5620.0> connection <0.5620.0> ([::1]:51612 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:41:36.614 [info] <0.5634.0> accepting AMQP connection <0.5634.0> ([::1]:52379 -> [::1]:5672)
+2019-04-10 19:41:36.616 [info] <0.5634.0> connection <0.5634.0> ([::1]:52379 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:41:40.615 [info] <0.5671.0> accepting AMQP connection <0.5671.0> ([::1]:52436 -> [::1]:5672)
+2019-04-10 19:41:40.618 [info] <0.5671.0> connection <0.5671.0> ([::1]:52436 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:41:57.273 [error] <0.5535.0> closing AMQP connection <0.5535.0> ([::1]:49938 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 19:42:16.417 [error] <0.5583.0> closing AMQP connection <0.5583.0> ([::1]:51445 -> [::1]:5672):
+{writer,send_failed,{error,timeout}}
+2019-04-10 19:43:19.017 [info] <0.5798.0> accepting AMQP connection <0.5798.0> ([::1]:53824 -> [::1]:5672)
+2019-04-10 19:43:19.020 [info] <0.5798.0> connection <0.5798.0> ([::1]:53824 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:43:29.747 [info] <0.5839.0> accepting AMQP connection <0.5839.0> ([::1]:53965 -> [::1]:5672)
+2019-04-10 19:43:29.750 [info] <0.5839.0> connection <0.5839.0> ([::1]:53965 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:43:39.467 [error] <0.5620.0> closing AMQP connection <0.5620.0> ([::1]:51612 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 19:44:40.621 [error] <0.5671.0> closing AMQP connection <0.5671.0> ([::1]:52436 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 19:45:36.620 [error] <0.5634.0> closing AMQP connection <0.5634.0> ([::1]:52379 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 19:45:38.394 [info] <0.5931.0> accepting AMQP connection <0.5931.0> ([::1]:55684 -> [::1]:5672)
+2019-04-10 19:45:38.396 [info] <0.5931.0> connection <0.5931.0> ([::1]:55684 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:46:19.022 [error] <0.5798.0> closing AMQP connection <0.5798.0> ([::1]:53824 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 19:46:29.752 [error] <0.5839.0> closing AMQP connection <0.5839.0> ([::1]:53965 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 19:48:38.399 [error] <0.5931.0> closing AMQP connection <0.5931.0> ([::1]:55684 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 19:53:09.149 [info] <0.6003.0> accepting AMQP connection <0.6003.0> ([::1]:60860 -> [::1]:5672)
+2019-04-10 19:53:09.153 [info] <0.6003.0> connection <0.6003.0> ([::1]:60860 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:53:53.402 [info] <0.6040.0> accepting AMQP connection <0.6040.0> ([::1]:61454 -> [::1]:5672)
+2019-04-10 19:53:53.405 [info] <0.6040.0> connection <0.6040.0> ([::1]:61454 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:57:37.781 [info] <0.6198.0> accepting AMQP connection <0.6198.0> ([::1]:64460 -> [::1]:5672)
+2019-04-10 19:57:37.784 [info] <0.6198.0> connection <0.6198.0> ([::1]:64460 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 19:58:11.729 [error] <0.6003.0> closing AMQP connection <0.6003.0> ([::1]:60860 -> [::1]:5672):
+{writer,send_failed,{error,timeout}}
+2019-04-10 19:59:53.411 [error] <0.6040.0> closing AMQP connection <0.6040.0> ([::1]:61454 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 20:00:19.805 [info] <0.6354.0> accepting AMQP connection <0.6354.0> ([::1]:50228 -> [::1]:5672)
+2019-04-10 20:00:19.808 [info] <0.6354.0> connection <0.6354.0> ([::1]:50228 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 20:00:31.488 [warning] <0.6354.0> closing AMQP connection <0.6354.0> ([::1]:50228 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-10 20:00:31.488 [warning] <0.6198.0> closing AMQP connection <0.6198.0> ([::1]:64460 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-10 20:00:36.939 [info] <0.6384.0> accepting AMQP connection <0.6384.0> ([::1]:50709 -> [::1]:5672)
+2019-04-10 20:00:36.942 [info] <0.6384.0> connection <0.6384.0> ([::1]:50709 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 20:03:36.944 [error] <0.6384.0> closing AMQP connection <0.6384.0> ([::1]:50709 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 20:10:08.353 [info] <0.6489.0> accepting AMQP connection <0.6489.0> ([::1]:62204 -> [::1]:5672)
+2019-04-10 20:10:08.356 [info] <0.6489.0> connection <0.6489.0> ([::1]:62204 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 20:10:09.488 [info] <0.6489.0> closing AMQP connection <0.6489.0> ([::1]:62204 -> [::1]:5672, vhost: '/', user: 'guest')
+2019-04-10 23:54:54.182 [info] <0.6933.0> accepting AMQP connection <0.6933.0> ([::1]:65032 -> [::1]:5672)
+2019-04-10 23:54:54.185 [info] <0.6933.0> connection <0.6933.0> ([::1]:65032 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 23:57:31.477 [info] <0.6975.0> accepting AMQP connection <0.6975.0> ([::1]:51786 -> [::1]:5672)
+2019-04-10 23:57:31.480 [info] <0.6975.0> connection <0.6975.0> ([::1]:51786 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-10 23:57:54.188 [error] <0.6933.0> closing AMQP connection <0.6933.0> ([::1]:65032 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-10 23:58:55.727 [info] <0.7078.0> accepting AMQP connection <0.7078.0> ([::1]:53476 -> [::1]:5672)
+2019-04-10 23:58:55.730 [info] <0.7078.0> connection <0.7078.0> ([::1]:53476 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 00:06:48.612 [info] <0.7337.0> accepting AMQP connection <0.7337.0> ([::1]:62985 -> [::1]:5672)
+2019-04-11 00:06:48.615 [info] <0.7337.0> connection <0.7337.0> ([::1]:62985 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 00:06:56.234 [warning] <0.7078.0> closing AMQP connection <0.7078.0> ([::1]:53476 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-11 00:06:56.238 [warning] <0.6975.0> closing AMQP connection <0.6975.0> ([::1]:51786 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-11 00:07:01.290 [warning] <0.7337.0> closing AMQP connection <0.7337.0> ([::1]:62985 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-11 00:07:26.159 [info] <0.7399.0> accepting AMQP connection <0.7399.0> ([::1]:64025 -> [::1]:5672)
+2019-04-11 00:07:26.161 [info] <0.7399.0> connection <0.7399.0> ([::1]:64025 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 00:07:38.850 [info] <0.7436.0> accepting AMQP connection <0.7436.0> ([::1]:64361 -> [::1]:5672)
+2019-04-11 00:07:38.852 [info] <0.7436.0> connection <0.7436.0> ([::1]:64361 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 00:07:56.733 [info] <0.7475.0> accepting AMQP connection <0.7475.0> ([::1]:64835 -> [::1]:5672)
+2019-04-11 00:07:56.736 [info] <0.7475.0> connection <0.7475.0> ([::1]:64835 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 00:10:26.164 [error] <0.7399.0> closing AMQP connection <0.7399.0> ([::1]:64025 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-11 00:10:38.855 [error] <0.7436.0> closing AMQP connection <0.7436.0> ([::1]:64361 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-11 02:10:51.007 [error] <0.7475.0> closing AMQP connection <0.7475.0> ([::1]:64835 -> [::1]:5672):
+missed heartbeats from client, timeout: 60s
+2019-04-11 10:35:59.907 [info] <0.7898.0> accepting AMQP connection <0.7898.0> ([::1]:50478 -> [::1]:5672)
+2019-04-11 10:35:59.921 [info] <0.7898.0> connection <0.7898.0> ([::1]:50478 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 10:37:03.533 [info] <0.7938.0> accepting AMQP connection <0.7938.0> ([::1]:52178 -> [::1]:5672)
+2019-04-11 10:37:03.535 [info] <0.7938.0> connection <0.7938.0> ([::1]:52178 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 10:37:23.826 [warning] <0.7898.0> closing AMQP connection <0.7898.0> ([::1]:50478 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-11 10:37:23.914 [info] <0.7983.0> accepting AMQP connection <0.7983.0> ([::1]:52719 -> [::1]:5672)
+2019-04-11 10:37:23.917 [info] <0.7983.0> connection <0.7983.0> ([::1]:52719 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 10:37:30.965 [warning] <0.7938.0> closing AMQP connection <0.7938.0> ([::1]:52178 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-11 10:37:31.053 [info] <0.8028.0> accepting AMQP connection <0.8028.0> ([::1]:52909 -> [::1]:5672)
+2019-04-11 10:37:31.055 [info] <0.8028.0> connection <0.8028.0> ([::1]:52909 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 10:38:16.031 [info] <0.8068.0> accepting AMQP connection <0.8068.0> ([::1]:54104 -> [::1]:5672)
+2019-04-11 10:38:16.034 [info] <0.8068.0> connection <0.8068.0> ([::1]:54104 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 10:39:18.192 [warning] <0.7983.0> closing AMQP connection <0.7983.0> ([::1]:52719 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-11 10:39:18.192 [warning] <0.8028.0> closing AMQP connection <0.8028.0> ([::1]:52909 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-11 10:39:18.290 [info] <0.8123.0> accepting AMQP connection <0.8123.0> ([::1]:55744 -> [::1]:5672)
+2019-04-11 10:39:18.292 [info] <0.8123.0> connection <0.8123.0> ([::1]:55744 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 10:39:24.423 [warning] <0.8068.0> closing AMQP connection <0.8068.0> ([::1]:54104 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-11 10:39:29.466 [warning] <0.8123.0> closing AMQP connection <0.8123.0> ([::1]:55744 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-11 10:39:37.995 [info] <0.8176.0> accepting AMQP connection <0.8176.0> ([::1]:56373 -> [::1]:5672)
+2019-04-11 10:39:37.998 [info] <0.8176.0> connection <0.8176.0> ([::1]:56373 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 10:39:50.747 [info] <0.8223.0> accepting AMQP connection <0.8223.0> ([::1]:56717 -> [::1]:5672)
+2019-04-11 10:39:50.750 [info] <0.8223.0> connection <0.8223.0> ([::1]:56717 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 10:39:59.889 [info] <0.8260.0> accepting AMQP connection <0.8260.0> ([::1]:56967 -> [::1]:5672)
+2019-04-11 10:39:59.892 [info] <0.8260.0> connection <0.8260.0> ([::1]:56967 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 10:40:12.929 [info] <0.8297.0> accepting AMQP connection <0.8297.0> ([::1]:57395 -> [::1]:5672)
+2019-04-11 10:40:12.932 [info] <0.8297.0> connection <0.8297.0> ([::1]:57395 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 10:40:29.263 [warning] <0.8297.0> closing AMQP connection <0.8297.0> ([::1]:57395 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-11 10:40:31.201 [info] <0.8342.0> accepting AMQP connection <0.8342.0> ([::1]:57931 -> [::1]:5672)
+2019-04-11 10:40:31.204 [info] <0.8342.0> connection <0.8342.0> ([::1]:57931 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'
+2019-04-11 10:40:36.335 [warning] <0.8176.0> closing AMQP connection <0.8176.0> ([::1]:56373 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-11 10:40:36.335 [warning] <0.8260.0> closing AMQP connection <0.8260.0> ([::1]:56967 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-11 10:40:36.336 [warning] <0.8223.0> closing AMQP connection <0.8223.0> ([::1]:56717 -> [::1]:5672, vhost: '/', user: 'guest'):
+client unexpectedly closed TCP connection
+2019-04-11 10:40:45.685 [info] <0.8405.0> accepting AMQP connection <0.8405.0> ([::1]:58704 -> [::1]:5672)
+2019-04-11 10:40:45.688 [info] <0.8405.0> connection <0.8405.0> ([::1]:58704 -> [::1]:5672): user 'guest' authenticated and granted access to vhost '/'

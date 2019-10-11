@@ -1,0 +1,175 @@
+2019-04-04 17:32:20.689 [info] <0.8.0> Log file opened with Lager
+2019-04-04 17:32:21.039 [info] <0.211.0> 
+ Starting RabbitMQ 3.7.14 on Erlang 21.3
+ Copyright (C) 2007-2019 Pivotal Software, Inc.
+ Licensed under the MPL.  See https://www.rabbitmq.com/
+2019-04-04 17:32:21.042 [info] <0.211.0> 
+ node           : rabbit@8afbf88b
+ home dir       : /Users/jimmyjacobson
+ config file(s) : (none)
+ cookie hash    : ZQ9SkBGKy/8h3zW+av50Gw==
+ log(s)         : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbf88b.log
+                : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/log/rabbitmq/rabbit@8afbf88b_upgrade.log
+ database dir   : /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbf88b
+2019-04-04 17:32:21.107 [error] <0.214.0> Unable to load crypto library. Failed with error:
+"load_failed, Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib
+  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so
+  Reason: image not found'"
+OpenSSL might not be installed on this system.
+
+2019-04-04 17:32:21.108 [warning] <0.215.0> The on_load function for module crypto returned:
+{error,{load_failed,"Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib\n  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so\n  Reason: image not found'"}}
+2019-04-04 17:32:22.318 [info] <0.211.0> Running boot step pre_boot defined by app rabbit
+2019-04-04 17:32:22.318 [info] <0.211.0> Running boot step rabbit_core_metrics defined by app rabbit
+2019-04-04 17:32:22.318 [info] <0.211.0> Running boot step rabbit_alarm defined by app rabbit
+2019-04-04 17:32:22.343 [info] <0.220.0> Memory high watermark set to 6553 MiB (6871947673 bytes) of 16384 MiB (17179869184 bytes) total
+2019-04-04 17:32:22.369 [info] <0.222.0> Enabling free disk space monitoring
+2019-04-04 17:32:22.369 [info] <0.222.0> Disk free limit set to 50MB
+2019-04-04 17:32:22.376 [info] <0.211.0> Running boot step code_server_cache defined by app rabbit
+2019-04-04 17:32:22.376 [info] <0.211.0> Running boot step file_handle_cache defined by app rabbit
+2019-04-04 17:32:22.376 [info] <0.225.0> Limiting to approx 156 file handles (138 sockets)
+2019-04-04 17:32:22.376 [info] <0.226.0> FHC read buffering:  OFF
+2019-04-04 17:32:22.376 [info] <0.226.0> FHC write buffering: ON
+2019-04-04 17:32:22.377 [info] <0.211.0> Running boot step worker_pool defined by app rabbit
+2019-04-04 17:32:22.377 [info] <0.211.0> Running boot step database defined by app rabbit
+2019-04-04 17:32:22.378 [info] <0.211.0> Node database directory at /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbf88b is empty. Assuming we need to join an existing cluster or initialise from scratch...
+2019-04-04 17:32:22.378 [info] <0.211.0> Configured peer discovery backend: rabbit_peer_discovery_classic_config
+2019-04-04 17:32:22.378 [info] <0.211.0> Will try to lock with peer discovery backend rabbit_peer_discovery_classic_config
+2019-04-04 17:32:22.378 [info] <0.211.0> Peer discovery backend does not support locking, falling back to randomized delay
+2019-04-04 17:32:22.378 [info] <0.211.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping randomized startup delay.
+2019-04-04 17:32:22.378 [info] <0.211.0> All discovered existing cluster peers: 
+2019-04-04 17:32:22.378 [info] <0.211.0> Discovered no peer nodes to cluster with
+2019-04-04 17:32:22.379 [info] <0.43.0> Application mnesia exited with reason: stopped
+2019-04-04 17:32:22.752 [info] <0.211.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-04 17:32:22.760 [error] <0.385.0> Unable to load crypto library. Failed with error:
+"load_failed, Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib
+  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so
+  Reason: image not found'"
+OpenSSL might not be installed on this system.
+
+2019-04-04 17:32:22.762 [warning] <0.386.0> The on_load function for module crypto returned:
+{error,{load_failed,"Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib\n  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so\n  Reason: image not found'"}}
+2019-04-04 17:32:22.774 [error] <0.387.0> Unable to load crypto library. Failed with error:
+"load_failed, Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib
+  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so
+  Reason: image not found'"
+OpenSSL might not be installed on this system.
+
+2019-04-04 17:32:22.776 [warning] <0.388.0> The on_load function for module crypto returned:
+{error,{load_failed,"Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib\n  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so\n  Reason: image not found'"}}
+2019-04-04 17:32:22.800 [info] <0.211.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-04 17:32:22.836 [error] <0.390.0> Unable to load crypto library. Failed with error:
+"load_failed, Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib
+  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so
+  Reason: image not found'"
+OpenSSL might not be installed on this system.
+
+2019-04-04 17:32:22.838 [warning] <0.391.0> The on_load function for module crypto returned:
+{error,{load_failed,"Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib\n  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so\n  Reason: image not found'"}}
+2019-04-04 17:32:22.850 [error] <0.392.0> Unable to load crypto library. Failed with error:
+"load_failed, Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib
+  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so
+  Reason: image not found'"
+OpenSSL might not be installed on this system.
+
+2019-04-04 17:32:22.852 [warning] <0.393.0> The on_load function for module crypto returned:
+{error,{load_failed,"Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib\n  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so\n  Reason: image not found'"}}
+2019-04-04 17:32:22.858 [info] <0.211.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2019-04-04 17:32:22.858 [info] <0.211.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2019-04-04 17:32:22.858 [info] <0.211.0> Running boot step database_sync defined by app rabbit
+2019-04-04 17:32:22.858 [info] <0.211.0> Running boot step codec_correctness_check defined by app rabbit
+2019-04-04 17:32:22.858 [info] <0.211.0> Running boot step external_infrastructure defined by app rabbit
+2019-04-04 17:32:22.858 [info] <0.211.0> Running boot step rabbit_registry defined by app rabbit
+2019-04-04 17:32:22.858 [info] <0.211.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2019-04-04 17:32:22.858 [info] <0.211.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2019-04-04 17:32:22.858 [info] <0.211.0> Running boot step rabbit_event defined by app rabbit
+2019-04-04 17:32:22.858 [info] <0.211.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2019-04-04 17:32:22.858 [info] <0.211.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2019-04-04 17:32:22.858 [info] <0.211.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2019-04-04 17:32:22.858 [info] <0.211.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2019-04-04 17:32:22.859 [info] <0.211.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2019-04-04 17:32:22.859 [info] <0.211.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2019-04-04 17:32:22.859 [info] <0.211.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2019-04-04 17:32:22.859 [info] <0.211.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2019-04-04 17:32:22.859 [info] <0.211.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2019-04-04 17:32:22.859 [info] <0.211.0> Running boot step rabbit_priority_queue defined by app rabbit
+2019-04-04 17:32:22.859 [info] <0.211.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2019-04-04 17:32:22.859 [info] <0.211.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2019-04-04 17:32:22.859 [info] <0.211.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2019-04-04 17:32:22.859 [info] <0.211.0> Running boot step kernel_ready defined by app rabbit
+2019-04-04 17:32:22.859 [info] <0.211.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2019-04-04 17:32:22.859 [info] <0.211.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2019-04-04 17:32:22.867 [info] <0.211.0> Running boot step guid_generator defined by app rabbit
+2019-04-04 17:32:22.883 [info] <0.211.0> Running boot step rabbit_node_monitor defined by app rabbit
+2019-04-04 17:32:22.883 [info] <0.410.0> Starting rabbit_node_monitor
+2019-04-04 17:32:22.883 [info] <0.211.0> Running boot step delegate_sup defined by app rabbit
+2019-04-04 17:32:22.884 [info] <0.211.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2019-04-04 17:32:22.884 [info] <0.211.0> Running boot step core_initialized defined by app rabbit
+2019-04-04 17:32:22.884 [info] <0.211.0> Running boot step upgrade_queues defined by app rabbit
+2019-04-04 17:32:22.892 [error] <0.430.0> Unable to load crypto library. Failed with error:
+"load_failed, Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib
+  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so
+  Reason: image not found'"
+OpenSSL might not be installed on this system.
+
+2019-04-04 17:32:22.894 [warning] <0.431.0> The on_load function for module crypto returned:
+{error,{load_failed,"Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib\n  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so\n  Reason: image not found'"}}
+2019-04-04 17:32:22.907 [error] <0.432.0> Unable to load crypto library. Failed with error:
+"load_failed, Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib
+  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so
+  Reason: image not found'"
+OpenSSL might not be installed on this system.
+
+2019-04-04 17:32:22.909 [warning] <0.433.0> The on_load function for module crypto returned:
+{error,{load_failed,"Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib\n  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so\n  Reason: image not found'"}}
+2019-04-04 17:32:22.918 [info] <0.211.0> message_store upgrades: 1 to apply
+2019-04-04 17:32:22.919 [info] <0.211.0> message_store upgrades: Applying rabbit_variable_queue:move_messages_to_vhost_store
+2019-04-04 17:32:22.919 [info] <0.211.0> message_store upgrades: No durable queues found. Skipping message store migration
+2019-04-04 17:32:22.919 [info] <0.211.0> message_store upgrades: Removing the old message store data
+2019-04-04 17:32:22.919 [info] <0.211.0> message_store upgrades: All upgrades applied successfully
+2019-04-04 17:32:22.927 [error] <0.434.0> Unable to load crypto library. Failed with error:
+"load_failed, Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib
+  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so
+  Reason: image not found'"
+OpenSSL might not be installed on this system.
+
+2019-04-04 17:32:22.928 [warning] <0.435.0> The on_load function for module crypto returned:
+{error,{load_failed,"Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib\n  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so\n  Reason: image not found'"}}
+2019-04-04 17:32:22.941 [error] <0.436.0> Unable to load crypto library. Failed with error:
+"load_failed, Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib
+  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so
+  Reason: image not found'"
+OpenSSL might not be installed on this system.
+
+2019-04-04 17:32:22.943 [warning] <0.437.0> The on_load function for module crypto returned:
+{error,{load_failed,"Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib\n  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so\n  Reason: image not found'"}}
+2019-04-04 17:32:22.969 [info] <0.211.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2019-04-04 17:32:22.969 [info] <0.211.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2019-04-04 17:32:22.969 [info] <0.211.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2019-04-04 17:32:22.970 [info] <0.211.0> Running boot step rabbit_policies defined by app rabbit
+2019-04-04 17:32:22.971 [info] <0.211.0> Running boot step rabbit_policy defined by app rabbit
+2019-04-04 17:32:22.971 [info] <0.211.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2019-04-04 17:32:22.971 [info] <0.211.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2019-04-04 17:32:22.971 [info] <0.211.0> Running boot step recovery defined by app rabbit
+2019-04-04 17:32:22.972 [info] <0.211.0> Running boot step empty_db_check defined by app rabbit
+2019-04-04 17:32:22.972 [info] <0.211.0> Adding vhost '/'
+2019-04-04 17:32:23.064 [info] <0.453.0> Making sure data directory '/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbf88b/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2019-04-04 17:32:23.077 [info] <0.453.0> Starting message stores for vhost '/'
+2019-04-04 17:32:23.078 [info] <0.457.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2019-04-04 17:32:23.083 [info] <0.453.0> Started message store of type transient for vhost '/'
+2019-04-04 17:32:23.083 [info] <0.460.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2019-04-04 17:32:23.084 [warning] <0.460.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2019-04-04 17:32:23.085 [info] <0.453.0> Started message store of type persistent for vhost '/'
+2019-04-04 17:32:23.087 [info] <0.211.0> Creating user 'guest'
+2019-04-04 17:32:23.093 [error] <0.477.0> Unable to load crypto library. Failed with error:
+"load_failed, Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib
+  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so
+  Reason: image not found'"
+OpenSSL might not be installed on this system.
+
+2019-04-04 17:32:23.096 [info] <0.400.0> Closing all connections in vhost '/' on node 'rabbit@8afbf88b' because the vhost is stopping
+2019-04-04 17:32:23.096 [warning] <0.478.0> The on_load function for module crypto returned:
+{error,{load_failed,"Failed to load NIF library: 'dlopen(/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/erts-10.3/bin/../../lib/crypto-4.4.1/priv/lib/crypto.so, 2): Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib\n  Referenced from: /Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/lib/crypto-4.4.1/priv/lib/crypto.so\n  Reason: image not found'"}}
+2019-04-04 17:32:23.096 [info] <0.460.0> Stopping message store for directory '/Users/jimmyjacobson/CS3301_P2_MOM/rabbitmq-server-mac-standalone-3.7.14/rabbitmq_server-3.7.14/var/lib/rabbitmq/mnesia/rabbit@8afbf88b/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent'
+2019-04-04 17:32:23.096 [error] <0.210.0> CRASH REPORT Process <0.210.0> with 0 neighbours exited with reason: call to undefined function crypto:hash(sha256, <<111,40,137,7,103,117,101,115,116>>) in application_master:init/4 line 138
+2019-04-04 17:32:23.096 [info] <0.43.0> Application rabbit exited with reason: call to undefined function crypto:hash(sha256, <<111,40,137,7,103,117,101,115,116>>)
