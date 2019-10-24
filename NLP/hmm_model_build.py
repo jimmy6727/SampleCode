@@ -1,12 +1,46 @@
-## Hidden Markov Model Part of Speech Tagger 
-## This model-building script takes a command line argument of a binary, pre-tagged training corpus and builds probability
-## matrices for use in predictive part of speech analysis of text.
+# POSTagging.py
 
 # P(ti | ti-1) probability of a tag bigram - the transition probability
 # P(wi | ti) probability of a word given a tag - the emission probability
 
+# Given the sentence "I want to race" we can calculate the highest probability
+# tag sequence. The sentence could be tagged as "I/PRP want/VB to/TO race/VB"
+# or as "I/PRP want/VB to/TO race/NN"
+#
+# The calculation goes as follows: 
+# First tag sequence = P("I"|PRP)*P(VB|PRP)*P("want"|VB)*P(TO|VB)*P("to"|TO)*P(VB|TO)*P("race"|VB)
+# Second tag sequence = P("I"|PRP)*P(VB|PRP)*P("want"|VB)*P(TO|VB)*P("to"|TO)*P(NN|TO)*P("race"|NN)
+# And obviously the highest probability is more likely. 
+# With log probs, we add.
+                                
+
+# This gives us the more likely tag sequence between the two. But now what if we're interested
+# in the MOST LIKELY tag sequence out of all possible sequences - which in reality we are - we denote this
+# as ARGMAX(P(ti^n | wi^n)) = Product from i = 1 to n of P(wi | ti)*P(ti | ti-1)
+
+# Technically, this requires us to calculate 45^n possibilities, but we can estimate it - in class notes
+
+#from nltk.util import ngrams
+#from nltk.corpus import brown
+#s = brown.tagged_sents(categories='news')
+
+#file = "/Users/jimmyjacobson/Downloads/greeneggs_tagged.dat"
+#f = open(file, 'rb')
+#f1 = pickle.load(f)
+    
+#def AddSentenceBoundaries(datafile):
+#    for s in datafile:
+#        print(s)
+#        print(s[0])
+#        print(s[0][1])
+#        s_len = len(s)
+#        print(s_len)
+#        #Beginning of sentence tag bigram
+#        s.append(("<s>", s[0][1]))
+#        print(s)
 import sys
 import pickle
+import math
 from nltk.corpus import brown
 
 class HMTagModel:
@@ -19,12 +53,24 @@ class HMTagModel:
         pickle.dump([self.A_count, self.B_count, self.T_count], open(filename, "wb" ) )
         
     def BuildDictionaries(self, word_tag_corpus):
+        
+        # Get first 90% of corpus for training. The last 10% will be used as testset
+        word_tag_corpus = [sentence for sentence in word_tag_corpus]
+        
+        l = len(word_tag_corpus)
+        word_tag_corpus = word_tag_corpus[:math.floor(0.9*l)]
+        
         tags = []
         words = []
-        self.A_count = {}
+        self.A_count = {}           
         self.B_count = {}
         self.T_count = {}
         
+        for i in range(1,len(word_tag_corpus)-1):
+            sent = word_tag_corpus[i]
+            sent.insert(0, ("<S>", "<S>"))
+            word_tag_corpus[i] = sent
+
         for sent in word_tag_corpus:
             prevtag = '<S>'
             for w,t in sent:
@@ -55,13 +101,35 @@ class HMTagModel:
             
                prevtag = t
                
+       # Convert counts to probabilities
+        for t in self.A_count:
+           for t1 in self.A_count[t]:
+               s = sum(self.A_count[t].values())
+               self.A_count[t][t1] = self.A_count[t][t1] / s
+               
+        for t in self.B_count:
+           s = sum(self.B_count[t].values())
+           for w in self.B_count[t]:
+               self.B_count[t][w] = self.B_count[t][w] / s
+  
+        
+        return(self.A_count, self.B_count, self.T_count)
         
 def main():
     s = brown.tagged_sents(categories='news')
     print("Building Hidden Markov Model for brown news corpus")
+    #file = sys.argv[1]
+    #print("Building Hidden Markov Model for file " + str(file))
+    #f = pickle.load(open(file, 'rb'))
     Model = HMTagModel(s)
     Model.WriteModelToFile('model.dat')
 
 if __name__ == '__main__':
     main()
-
+#
+#PofNNgivenDT = A_count['DT']['NN'] / T_count['DT']
+#print(A_count)
+#print("\n\n\n")
+#print(B_count)
+#print("\n\n")
+#print(PofNNgivenDT)
