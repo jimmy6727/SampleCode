@@ -10,7 +10,7 @@ Thank you for visiting this sample page.
 
 
 # NLP
-The NLP folder contains some examples of work done for my Fall 2019 Natural Language Processing class at Whitman College. Included is an n-gram language model that can distinugish between authors of different text, and a hidden markov probability model that uses n-grams and part of speech tags to predict the likelihood of a given sequence of words, corresponding part of speech tags, as well as the most likely sequence of POS tags given a sentence/sequence of words.
+The NLP folder contains some examples of work done for my Fall 2019 Natural Language Processing class at Whitman College. Included is an n-gram language model that can distinugish between authors of different text, and a hidden markov probability model that uses n-grams and part of speech tags to predict the likelihood of a given sequence of words, corresponding part of speech tags, as well as the most likely sequence of POS tags given a sentence/sequence of words. It also includes a command line tool that uses matplot to display a spectrogram of verbal speech, as well as a sample spectrogram output.
 
 # ReactLax
 The ReactLax folder contains some samples of the logic behind React Lacrosse's fifth generation face off machine prototype. Some of this was written by contributors at cadmodels.com and modified/debugged/troubleshooted as needed.
