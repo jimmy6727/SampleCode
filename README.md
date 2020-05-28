@@ -1,13 +1,5 @@
 # SampleCode
-A portfolio of code samples to showcase my work for potential employers and other showcasing purposes.
-
-If you are a potential employer visiting this repository in order to view my work, thank you for your interest! Below is a 
-description of all the files in this repository, some of which were written in an academic setting, and some of which is portions of 
-other people's work that I added onto, modified, or otherwise contributed to (I give credit to any additional authors whenever 
-necessary).
-
 Thank you for visiting this sample page.
-
 
 # NLP
 The NLP folder contains some examples of work done for my Fall 2019 Natural Language Processing class at Whitman College. Included is an n-gram language model that can distinugish between authors of different text, and a hidden markov probability model that uses n-grams and part of speech tags to predict the likelihood of a given sequence of words, corresponding part of speech tags, as well as the most likely sequence of POS tags given a sentence/sequence of words. It also includes a command line tool that uses matplot to display a spectrogram of verbal speech, as well as a sample spectrogram output.
